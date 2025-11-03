@@ -5,7 +5,7 @@
       "titulo": "Autenticación de administrador",
       "descripcion": "Iniciar sesión como usuario administrador de Nexlogix con credenciales válidas.",
       "AUTOR" : "Brandon Gonzalez",
-      "completada": "in_progres"
+      "completada": true
     },
     {
       "id": 2,
@@ -37,7 +37,7 @@
     },
     {
       "id": 6,
-      "titulo": "Asignación de vehículo y conductor a ruta",
+      "titulo": "Asignación de vehículo con conductor a ruta existente",
       "descripcion": "Asignar un vehículo con conductor ya asociado a una ruta y validar que la asignación se haya realizado correctamente.",
       "completada": false,
       "AUTOR" : "Brandon Gonzalez"
