@@ -3,7 +3,6 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -25,7 +24,7 @@ public class auth_stepdefinition {
         
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(13));
         
         System.out.println("Navegando a: " + DefaultURL.URL);
         driver.get(DefaultURL.URL);
@@ -62,8 +61,8 @@ public class auth_stepdefinition {
         
         // Esperar un poco para ver el resultado
         try {
-            Thread.sleep(3000);
-            System.out.println("URL actual: " + driver.getCurrentUrl());
+            Thread.sleep(6000);
+            System.out.println(driver.getCurrentUrl());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
