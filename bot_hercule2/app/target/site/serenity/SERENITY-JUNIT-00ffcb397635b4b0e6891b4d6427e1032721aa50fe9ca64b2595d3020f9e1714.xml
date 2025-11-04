@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Ver y buscar conductores existentes" skipped="0" tests="1" time="78.59" timestamp="2025-11-04 12:22:41"><testcase name="Visualizar y buscar un conductor existente correctamente"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Ver y buscar conductores existentes" skipped="0" tests="1" time="152.52" timestamp="2025-11-04 03:00:28"><testcase name="Visualizar y buscar un conductor existente correctamente"><failure message="&#13;&#10;Expected: an element that is visible&#13;&#10;     but: no matching element found by [Tabla de resultados de conductores located with: css: .custom-table-wrapper, table]" type="java.lang.AssertionError">&#13;
+Expected: an element that is visible&#13;
+     but: no matching element found by [Tabla de resultados de conductores located with: css: .custom-table-wrapper, table]</failure><system-err>&#13;
+Expected: an element that is visible&#13;
+     but: no matching element found by [Tabla de resultados de conductores located with: css: .custom-table-wrapper, table]&#13;
+stepdefinitions.ViewsAndSearchDriversSteps.que_navega_hasta_la_sección_mostrando_la_lista_de_conductores_existentes(ViewsAndSearchDriversSteps.java:19)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

@@ -23,4 +23,11 @@ public class RoutersGeneral {
     public static final Target SELETC_LISTA_RUTAS = Target.the("Lista de rutas")
 	    .located(By.cssSelector(".submenu-container, .routes-list, #routes, table"));
 
+	// Módulo de Administración y Usuarios
+	public static final Target MODULE_ADMINISTRACION = Target.the("Toggle Administración")
+		.located(By.xpath("//a[contains(normalize-space(.),'Administración') or contains(.,'Administración')]") );
+
+	public static final Target SELETC_SUBMENU_USUARIOS = Target.the("Submenu Usuarios")
+		.located(By.xpath("//a[contains(@href,'/manager/usuarios') or contains(@href,'/admin/usuarios')]"));
+
 }
