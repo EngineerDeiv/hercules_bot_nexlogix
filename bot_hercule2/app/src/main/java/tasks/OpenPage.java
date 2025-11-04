@@ -15,7 +15,7 @@ public class OpenPage implements Task {
         );
     }
 
-    public static OpenPage toW3Schools() {
+    public static OpenPage toNexLogix() {
         return instrumented(OpenPage.class);
     }
 }
