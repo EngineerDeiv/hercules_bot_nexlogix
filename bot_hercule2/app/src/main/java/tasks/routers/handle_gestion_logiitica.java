@@ -21,7 +21,7 @@ public class handle_gestion_logiitica extends OpenPage implements Task {
         // Navegar al módulo Gestión Logística y abrir la sección Rutas
         actor.attemptsTo(
                 Click.on(RoutersGeneral.MODULE_GESTION_LOGISTICA),
-                Click.on(RoutersGeneral.SUBMENU_RUTAS)
+                Click.on(RoutersGeneral.SELETC_SUBMENU_RUTAS)
         );
     }
 }

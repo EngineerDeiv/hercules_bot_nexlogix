@@ -1,9 +1,11 @@
 package stepdefinitions;
+
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 
-public class asigned_vwd_to_route_stepdefinitions {
+public class view_and_search_routes {
+
 
     @Dado("el usuario es administrador y está autenticado en el sistema")
     public void el_usuario_es_administrador_y_está_autenticado_en_el_sistema() {
@@ -20,14 +22,15 @@ public class asigned_vwd_to_route_stepdefinitions {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-    @Cuando("asigna el vehículo con conductor a la ruta existente")
-    public void asigna_el_vehículo_con_conductor_a_la_ruta_existente() {
+    @Cuando("busca una ruta específica por su nombre o código")
+    public void busca_una_ruta_específica_por_su_nombre_o_código() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-    @Entonces("la ruta muestra que el vehículo con conductor ha sido asignado correctamente y debe quedar registrada en el sistema")
-    public void la_ruta_muestra_que_el_vehículo_con_conductor_ha_sido_asignado_correctamente_y_debe_quedar_registrada_en_el_sistema() {
+    @Entonces("el sistema muestra los detalles de la ruta seleccionada correctamente")
+    public void el_sistema_muestra_los_detalles_de_la_ruta_seleccionada_correctamente() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
 }
