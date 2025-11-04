@@ -3,6 +3,8 @@ package tasks.routers;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.waits.WaitUntil;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import tasks.OpenPage;
 import userinterface.RoutersGeneral;
 
@@ -21,7 +23,9 @@ public class handle_gestion_logiitica extends OpenPage implements Task {
         // Navegar al módulo Gestión Logística y abrir la sección Rutas
         actor.attemptsTo(
                 Click.on(RoutersGeneral.MODULE_GESTION_LOGISTICA),
-                Click.on(RoutersGeneral.SELETC_SUBMENU_RUTAS)
+                // Esperar a que el enlace de Ciudades esté visible antes de clicar
+                WaitUntil.the(RoutersGeneral.SELETC_SUBMENU_CIUDADES, isVisible()).forNoMoreThan(10).seconds(),
+                Click.on(RoutersGeneral.SELETC_SUBMENU_CIUDADES)
         );
     }
 }

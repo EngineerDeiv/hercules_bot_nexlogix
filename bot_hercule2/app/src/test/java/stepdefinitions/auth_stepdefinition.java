@@ -1,8 +1,8 @@
 package stepdefinitions;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
-import io.cucumber.java.en.Then;
+import io.cucumber.java.es.Dado;
+import io.cucumber.java.es.Cuando;
+import io.cucumber.java.es.Entonces;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,7 +18,7 @@ public class auth_stepdefinition {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @Given("que el usuario navega a la página web de Nexlogix y se encuentra en la pantalla de inicio de sesión")
+    @Dado("que el usuario navega a la página web de Nexlogix y se encuentra en la pantalla de inicio de sesión")
     public void que_el_usuario_navega_a_la_página_web_de_nexlogix_y_se_encuentra_en_la_pantalla_de_inicio_de_sesión() {
         System.out.println("Abriendo navegador Chrome...");
         
@@ -30,7 +30,7 @@ public class auth_stepdefinition {
         driver.get(DefaultURL.URL);
     }
     
-    @When("ingrese las siguientes credenciales:")
+    @Cuando("ingrese las siguientes credenciales:")
     public void ingrese_las_siguientes_credenciales(io.cucumber.datatable.DataTable dataTable) {
         System.out.println("Ingresando credenciales...");
         
@@ -55,7 +55,7 @@ public class auth_stepdefinition {
         loginButton.click();
     }
     
-    @Then("el sistema deberá autenticarlo correctamente y mostrar el panel de administración")
+    @Entonces("el sistema deberá autenticarlo correctamente y mostrar el panel de administración")
     public void el_sistema_deberá_autenticarlo_correctamente_y_mostrar_el_panel_de_administración() {
         System.out.println("Verificando que el login fue exitoso...");
         
