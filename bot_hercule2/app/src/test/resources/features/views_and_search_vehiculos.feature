@@ -1,15 +1,15 @@
 # language: es
 # autor: Brandon Gonzalez
 
-@ViewAndSearchDriver
-Característica: Ver y buscar conductores existentes
-  Como administrador de rutas
-  Quiero poder ver y buscar conductores existentes
-  Para validar que puedo acceder a la información del conductor correctamente
+@ViewAndSearchVehicle
+Característica: Ver y buscar vehículos existentes
+  Como administrador de logística
+  Quiero poder ver y buscar vehículos existentes
+  Para validar que puedo acceder a la información del vehículo correctamente
 
-  Escenario: Visualizar y buscar un conductor existente correctamente
+  Escenario: Visualizar y buscar varios vehículos por placa correctamente
     Dado el usuario es administrador y está autenticado en el sistema
     Dado que se encuentra en el módulo "Gestión Logística"
-    Dado que navega hasta la sección "Conductores" mostrando la lista de conductores existentes
-    Cuando busca un conductor específico por su nombre o número de identificación
-    Entonces el sistema muestra los detalles del conductor seleccionado correctamente
+  Dado que navega hasta la sección "Vehículos"
+    Cuando busca varias placas de vehiculos de la lista
+  Entonces el sistema muestra los detalles del vehículo seleccionado correctamente

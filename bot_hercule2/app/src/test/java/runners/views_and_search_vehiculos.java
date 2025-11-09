@@ -1,15 +1,4 @@
-package runners;
+// Runner duplicado eliminado del flujo de ejecución.
+// Dejo este archivo como comentario para evitar ejecuciones duplicadas.
+// Use la clase `runners.ViewsAndSearchVehiculos` (con mayúscula) como runner válido.
 
-import org.junit.runner.RunWith;
-import net.serenitybdd.cucumber.CucumberWithSerenity;
-import io.cucumber.junit.CucumberOptions;
-
-@RunWith(CucumberWithSerenity.class)
-@CucumberOptions(
-        features = "src/test/resources/features/views_and_search_vehiculos.feature",
-        glue = {"stepdefinitions"},
-        plugin = {"pretty", "html:target/cucumber-reports.html"}
-)
-public class views_and_search_vehiculos {
-}
-// aqui esta lo de conductores pero debe ser vehiculos, hacer auth y buscar vehiculos

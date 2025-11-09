@@ -5,6 +5,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -22,8 +23,10 @@ public class auth_stepdefinition {
     public void que_el_usuario_navega_a_la_página_web_de_nexlogix_y_se_encuentra_en_la_pantalla_de_inicio_de_sesión() {
         System.out.println("Abriendo navegador Chrome...");
         
-        ChromeOptions options = new ChromeOptions();
-        driver = new ChromeDriver(options);
+    ChromeOptions options = new ChromeOptions();
+    // Ensure matching chromedriver binary is available for the installed Chrome version
+    WebDriverManager.chromedriver().setup();
+    driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(13));
         
         System.out.println("Navegando a: " + DefaultURL.URL);

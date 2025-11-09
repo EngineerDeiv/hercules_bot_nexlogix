@@ -44,6 +44,7 @@ dependencies {
     // Selenium and WebDriver
     implementation libs.selenium.java
     implementation libs.webdrivermanager
+    // (no explicit selenium-devtools dependency) - rely on Selenium + WebDriverManager
 
     // Testing utilities
     testImplementation libs.assertj.core

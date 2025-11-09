@@ -1,0 +1,130 @@
+Initialized native services in: C:\Users\devel\.gradle\native
+Initialized jansi services in: C:\Users\devel\.gradle\native
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.0.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Starting process 'Gradle build daemon'. Working directory: C:\Users\devel\.gradle\daemon\9.0.0 Command: C:\Important_Routers\Java_jdk\bin\java.exe --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -XX:MaxMetaspaceSize=384m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=MX -Duser.language=es -Duser.variant -cp C:\Users\devel\.gradle\wrapper\dists\gradle-9.0.0-bin\d6wjpkvcgsg3oed0qlfss3wgl\gradle-9.0.0\lib\gradle-daemon-main-9.0.0.jar -javaagent:C:\Users\devel\.gradle\wrapper\dists\gradle-9.0.0-bin\d6wjpkvcgsg3oed0qlfss3wgl\gradle-9.0.0\lib\agents\gradle-instrumentation-agent-9.0.0.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.0.0
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 1.749 secs.
+The client will now receive all logging from the daemon (pid: 17508). The daemon log file: C:\Users\devel\.gradle\daemon\9.0.0\daemon-17508.out.log
+Daemon will be stopped at the end of the build 
+Using 16 worker leases.
+Received JVM installation metadata from 'C:\Important_Routers\Java_jdk': {JAVA_HOME=C:\Important_Routers\Java_jdk, JAVA_VERSION=21.0.6, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=21.0.6+8-LTS-188, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=21.0.6+8-LTS-188, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [C:\projects_dev\bots_nexlogix\bot_hercule2] as hierarchies to watch
+File system watching is active
+Starting Build
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '1.0.0']
+Settings evaluated using settings file 'C:\projects_dev\bots_nexlogix\bot_hercule2\settings.gradle'.
+Projects loaded. Root project using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\build.gradle'.
+Included projects: [root project 'bot_hercule2', project ':app']
+
+> Configure project :
+Evaluating root project 'bot_hercule2' using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\build.gradle'.
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\build.gradle'.
+Resolved plugin [id: 'application']
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'idea']
+Resolved plugin [id: 'net.serenity-bdd.serenity-gradle-plugin', version: '4.2.8']
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'test'
+Selected primary task 'clean' from project :
+Selected primary task 'test' from project :
+Starting process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe''. Working directory: C:\Users\devel\.gradle\.tmp\tmp-jvm9818883391130626222probe Command: C:\Program Files\Java\jdk-17\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe''
+Received JVM installation metadata from 'C:\Program Files\Java\jdk-17': {JAVA_HOME=C:\Program Files\Java\jdk-17, JAVA_VERSION=17.0.12, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=17.0.12+8-LTS-286, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=17.0.12+8-LTS-286, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Starting process 'command 'C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe''. Working directory: C:\Users\devel\.gradle\.tmp\tmp-jvm3510440878013026573probe Command: C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe''
+Received JVM installation metadata from 'C:\Users\devel\.jdks\corretto-15.0.2': {JAVA_HOME=C:\Users\devel\.jdks\corretto-15.0.2, JAVA_VERSION=15.0.2, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=15.0.2+7, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=15.0.2+7, VM_VENDOR=Amazon.com Inc., OS_ARCH=amd64}
+Tasks to be executed: [task ':app:clearReports', task ':app:clean', task ':app:compileJava', task ':app:processResources', task ':app:classes', task ':app:compileTestJava', task ':app:processTestResources', task ':app:testClasses', task ':app:test', task ':app:aggregate']
+Tasks that were excluded: []
+Resolve mutations for :app:clearReports (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:clearReports (Thread[#140,Execution worker Thread 3,5,main]) started.
+
+> Task :app:clearReports
+Caching disabled for task ':app:clearReports' because:
+  Build cache is disabled
+Task ':app:clearReports' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:clean (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:clean (Thread[#140,Execution worker Thread 3,5,main]) started.
+destroyer locations for task group 0 (Thread[#137,included builds,5,main]) started.
+
+> Task :app:clean
+Caching disabled for task ':app:clean' because:
+  Build cache is disabled
+Task ':app:clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:compileJava (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:compileJava (Thread[#140,Execution worker Thread 3,5,main]) started.
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+
+> Task :app:compileJava
+Caching disabled for task ':app:compileJava' because:
+  Build cache is disabled
+Task ':app:compileJava' is not up-to-date because:
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main\models has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main\models\auth_user_admin.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:compileJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\Java\jdk-17'.
+Starting process 'Gradle Worker Daemon 1'. Working directory: C:\Users\devel\.gradle\workers Command: C:\Program Files\Java\jdk-17\bin\java.exe --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED @C:\Users\devel\.gradle\.tmp\gradle-worker-classpath18177770477599567946txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=MX -Duser.language=es -Duser.variant worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 1'
+Successfully started process 'Gradle Worker Daemon 1'
+Started Gradle worker daemon (0.603 secs) with fork options DaemonForkOptions{executable=C:\Program Files\Java\jdk-17\bin\java.exe, minHeapSize=null, maxHeapSize=null, jvmArgs=[--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED], keepAliveMode=DAEMON}.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.18 secs.
+Created classpath snapshot for incremental compilation in 0.424 secs.
+Resolve mutations for :app:processResources (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:processResources (Thread[#140,Execution worker Thread 3,5,main]) started.
+
+> Task :app:processResources NO-SOURCE
+Skipping task ':app:processResources' as it has no source files and no previous output files.
+Resolve mutations for :app:classes (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:classes (Thread[#140,Execution worker Thread 3,5,main]) started.
+
+> Task :app:classes
+Skipping task ':app:classes' as it has no actions.
+Resolve mutations for :app:compileTestJava (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:compileTestJava (Thread[#140,Execution worker Thread 3,5,main]) started.
+
+> Task :app:compileTestJava
+Caching disabled for task ':app:compileTestJava' because:
+  Build cache is disabled
+Task ':app:compileTestJava' is not up-to-date because:
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test\runners has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test\runners\auth_nexlogix.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:compileTestJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\Java\jdk-17'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.105 secs.
+Created classpath snapshot for incremental compilation in 0.091 secs.
+Resolve mutations for :app:processTestResources (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:processTestResources (Thread[#140,Execution worker Thread 3,5,main]) started.
+
+> Task :app:processTestResources
+Caching disabled for task ':app:processTestResources' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:processTestResources' is not up-to-date because:
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test has been removed.
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test\driver has been removed.
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test\driver\chromedriver.exe has been removed.
+  and more...
+Resolve mutations for :app:testClasses (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:testClasses (Thread[#140,Execution worker Thread 3,5,main]) started.
+
+> Task :app:testClasses
+Skipping task ':app:testClasses' as it has no actions.
+Resolve mutations for :app:test (Thread[#140,Execution worker Thread 3,5,main]) started.
+:app:test (Thread[#140,Execution worker Thread 3,5,main]) started.
+Gradle Test Executor 2 started executing tests.
+¨Desea terminar el trabajo por lotes (S/N)? 
+^CLa sintaxis del comando no es correcta.

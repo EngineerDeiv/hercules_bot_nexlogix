@@ -1,0 +1,214 @@
+Initialized native services in: C:\Users\devel\.gradle\native
+Initialized jansi services in: C:\Users\devel\.gradle\native
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.0.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Starting process 'Gradle build daemon'. Working directory: C:\Users\devel\.gradle\daemon\9.0.0 Command: C:\Important_Routers\Java_jdk\bin\java.exe --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -XX:MaxMetaspaceSize=384m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=MX -Duser.language=es -Duser.variant -cp C:\Users\devel\.gradle\wrapper\dists\gradle-9.0.0-bin\d6wjpkvcgsg3oed0qlfss3wgl\gradle-9.0.0\lib\gradle-daemon-main-9.0.0.jar -javaagent:C:\Users\devel\.gradle\wrapper\dists\gradle-9.0.0-bin\d6wjpkvcgsg3oed0qlfss3wgl\gradle-9.0.0\lib\agents\gradle-instrumentation-agent-9.0.0.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.0.0
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 5.11 secs.
+The client will now receive all logging from the daemon (pid: 22144). The daemon log file: C:\Users\devel\.gradle\daemon\9.0.0\daemon-22144.out.log
+Daemon will be stopped at the end of the build 
+Using 16 worker leases.
+Received JVM installation metadata from 'C:\Important_Routers\Java_jdk': {JAVA_HOME=C:\Important_Routers\Java_jdk, JAVA_VERSION=21.0.6, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=21.0.6+8-LTS-188, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=21.0.6+8-LTS-188, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [C:\projects_dev\bots_nexlogix\bot_hercule2] as hierarchies to watch
+File system watching is active
+Starting Build
+Invalidating in-memory cache of C:\Users\devel\.gradle\caches\journal-1\file-access.bin
+Invalidating in-memory cache of C:\Users\devel\.gradle\caches\9.0.0\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\devel\.gradle\caches\9.0.0\fileHashes\resourceHashesCache.bin
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '1.0.0']
+Settings evaluated using settings file 'C:\projects_dev\bots_nexlogix\bot_hercule2\settings.gradle'.
+Projects loaded. Root project using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\build.gradle'.
+Included projects: [root project 'bot_hercule2', project ':app']
+
+> Configure project :
+Evaluating root project 'bot_hercule2' using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\build.gradle'.
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\build.gradle'.
+Resolved plugin [id: 'application']
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'idea']
+Resolved plugin [id: 'net.serenity-bdd.serenity-gradle-plugin', version: '4.2.8']
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'test'
+Selected primary task 'clean' from project :
+Selected primary task 'test' from project :
+Starting process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe''. Working directory: C:\Users\devel\.gradle\.tmp\tmp-jvm9621103399790705852probe Command: C:\Program Files\Java\jdk-17\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe''
+Received JVM installation metadata from 'C:\Program Files\Java\jdk-17': {JAVA_HOME=C:\Program Files\Java\jdk-17, JAVA_VERSION=17.0.12, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=17.0.12+8-LTS-286, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=17.0.12+8-LTS-286, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Starting process 'command 'C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe''. Working directory: C:\Users\devel\.gradle\.tmp\tmp-jvm3366809879575373510probe Command: C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe''
+Received JVM installation metadata from 'C:\Users\devel\.jdks\corretto-15.0.2': {JAVA_HOME=C:\Users\devel\.jdks\corretto-15.0.2, JAVA_VERSION=15.0.2, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=15.0.2+7, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=15.0.2+7, VM_VENDOR=Amazon.com Inc., OS_ARCH=amd64}
+Tasks to be executed: [task ':app:clearReports', task ':app:clean', task ':app:compileJava', task ':app:processResources', task ':app:classes', task ':app:compileTestJava', task ':app:processTestResources', task ':app:testClasses', task ':app:test', task ':app:aggregate']
+Tasks that were excluded: []
+Resolve mutations for :app:clearReports (Thread[#139,Execution worker Thread 2,5,main]) started.
+:app:clearReports (Thread[#137,included builds,5,main]) started.
+
+> Task :app:clearReports
+Caching disabled for task ':app:clearReports' because:
+  Build cache is disabled
+Task ':app:clearReports' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:clean (Thread[#137,included builds,5,main]) started.
+:app:clean (Thread[#139,Execution worker Thread 2,5,main]) started.
+destroyer locations for task group 0 (Thread[#137,included builds,5,main]) started.
+
+> Task :app:clean
+Caching disabled for task ':app:clean' because:
+  Build cache is disabled
+Task ':app:clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:compileJava (Thread[#139,Execution worker Thread 2,5,main]) started.
+:app:compileJava (Thread[#137,included builds,5,main]) started.
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+
+> Task :app:compileJava
+Caching disabled for task ':app:compileJava' because:
+  Build cache is disabled
+Task ':app:compileJava' is not up-to-date because:
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main\models has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main\models\auth_user_admin.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:compileJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\Java\jdk-17'.
+Starting process 'Gradle Worker Daemon 1'. Working directory: C:\Users\devel\.gradle\workers Command: C:\Program Files\Java\jdk-17\bin\java.exe --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED @C:\Users\devel\.gradle\.tmp\gradle-worker-classpath9307378032744075342txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=MX -Duser.language=es -Duser.variant worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 1'
+Successfully started process 'Gradle Worker Daemon 1'
+Started Gradle worker daemon (0.676 secs) with fork options DaemonForkOptions{executable=C:\Program Files\Java\jdk-17\bin\java.exe, minHeapSize=null, maxHeapSize=null, jvmArgs=[--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED], keepAliveMode=DAEMON}.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.031 secs.
+Created classpath snapshot for incremental compilation in 0.454 secs.
+Resolve mutations for :app:processResources (Thread[#137,included builds,5,main]) started.
+:app:processResources (Thread[#137,included builds,5,main]) started.
+
+> Task :app:processResources NO-SOURCE
+Skipping task ':app:processResources' as it has no source files and no previous output files.
+Resolve mutations for :app:classes (Thread[#137,included builds,5,main]) started.
+:app:classes (Thread[#137,included builds,5,main]) started.
+
+> Task :app:classes
+Skipping task ':app:classes' as it has no actions.
+Resolve mutations for :app:compileTestJava (Thread[#149,Execution worker Thread 12,5,main]) started.
+:app:compileTestJava (Thread[#149,Execution worker Thread 12,5,main]) started.
+
+> Task :app:compileTestJava
+Caching disabled for task ':app:compileTestJava' because:
+  Build cache is disabled
+Task ':app:compileTestJava' is not up-to-date because:
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test\runners has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test\runners\auth_nexlogix.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:compileTestJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\Java\jdk-17'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.051 secs.
+Created classpath snapshot for incremental compilation in 0.083 secs.
+Resolve mutations for :app:processTestResources (Thread[#149,Execution worker Thread 12,5,main]) started.
+:app:processTestResources (Thread[#149,Execution worker Thread 12,5,main]) started.
+
+> Task :app:processTestResources
+Caching disabled for task ':app:processTestResources' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:processTestResources' is not up-to-date because:
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test has been removed.
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test\driver has been removed.
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test\driver\chromedriver.exe has been removed.
+  and more...
+Resolve mutations for :app:testClasses (Thread[#149,Execution worker Thread 12,5,main]) started.
+:app:testClasses (Thread[#149,Execution worker Thread 12,5,main]) started.
+
+> Task :app:testClasses
+Skipping task ':app:testClasses' as it has no actions.
+Resolve mutations for :app:test (Thread[#149,Execution worker Thread 12,5,main]) started.
+:app:test (Thread[#149,Execution worker Thread 12,5,main]) started.
+Gradle Test Executor 2 started executing tests.
+
+> Task :app:test
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Caching disabled for task ':app:test' because:
+  Build cache is disabled
+Task ':app:test' is not up-to-date because:
+  Task has failed previously.
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Stopped 1 worker daemon(s).
+Starting process 'Gradle Test Executor 2'. Working directory: C:\projects_dev\bots_nexlogix\bot_hercule2\app Command: C:\Program Files\Java\jdk-17\bin\java.exe -Dorg.gradle.internal.worker.tmpdir=C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\tmp\test\work @C:\Users\devel\.gradle\.tmp\gradle-worker-classpath11156441670898786253txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=MX -Duser.language=es -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2'
+Successfully started process 'Gradle Test Executor 2'
+
+ViewsAndSearchVehiculos STANDARD_ERROR
+    [Test worker] INFO  - 
+
+    -------------------------------------------------------------------------------------
+         _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+        /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+       |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+        \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+    .----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+    |_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+     News and tutorials at https://serenity-bdd.info                                     
+     Documentation at https://serenity-bdd.github.io                                     
+     Test Automation Training and Coaching: https://www.serenity-dojo.com                
+     Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+     Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+    -------------------------------------------------------------------------------------
+
+    [Test worker] INFO  - Test Suite Started: Ver y buscar vehículos existentes
+    [Test worker] INFO  - Test Suite Started: Ver y buscar vehículos existentes
+
+ViewsAndSearchVehiculos > Ver y buscar vehículos existentes > Visualizar y buscar varios vehículos por placa correctamente STANDARD_OUT
+
+    @ViewAndSearchVehicle
+    Escenario: Visualizar y buscar varios vehículos por placa correctamente            [90m# src/test/resources/features/views_and_search_vehiculos.feature:10[0m
+
+ViewsAndSearchVehiculos > Ver y buscar vehículos existentes > Visualizar y buscar varios vehículos por placa correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+     |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+       | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+       |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+    Visualizar y buscar varios vehículos por placa correctamente(ver-y-buscar-vehículos-existentes;visualizar-y-buscar-varios-vehículos-por-placa-correctamente)
+    --------------------------------------------------------------------------------
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+    nov. 08, 2025 10:15:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    WARNING: Unable to find CDP implementation matching 142
+    nov. 08, 2025 10:15:22 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+    WARNING: Unable to find version of CDP to use for 142.0.7444.61. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.26.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+ViewsAndSearchVehiculos > Ver y buscar vehículos existentes > Visualizar y buscar varios vehículos por placa correctamente STANDARD_OUT
+    STEP: usuario administrador autenticado (via Login Task).
+      [32mDado [0m[32mel usuario es administrador y está autenticado en el sistema[0m                [90m# stepdefinitions.view_and_search_routes.el_usuario_es_administrador_y_está_autenticado_en_el_sistema()[0m
+    STEP: navegar al módulo: Gestión Logística (stub).
+      [32mDado [0m[32mque se encuentra en el módulo [0m[32m[1m"Gestión Logística"[0m                           [90m# stepdefinitions.view_and_search_routes.que_se_encuentra_en_el_módulo(java.lang.String)[0m
+      [31mDado [0m[31mque navega hasta la sección [0m[31m[1m"Vehículos"[0m                                     [90m# stepdefinitions.ViewsAndSearchVehiculosSteps.que_navega_hasta_la_sección(java.lang.String)[0m
+          [31mjava.lang.AssertionError: invalid session id
+    Build info: version: '4.26.0', revision: '8ccf0219d7'
+    System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [b743447b5aaf62481a09d4d4fb5ce346, findElements {value=.custom-table-wrapper, table, using=css selector}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.61, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\devel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55433}, goog:processID: 17100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55433/devtoo..., se:cdpVersion: 142.0.7444.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+    Session ID: b743447b5aaf62481a09d4d4fb5ce346
+    	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+    	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+    	at net.serenitybdd.screenplay.Actor.should(Actor.java:397)
+    	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
+    	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+    	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+    	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:254)
+    	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:211)
+    	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+    	at stepdefinitions.ViewsAndSearchVehiculosSteps.que_navega_hasta_la_sección(ViewsAndSearchVehiculosSteps.java:41)
+    	at ✽.que navega hasta la sección "Vehículos"(file:///C:/projects_dev/bots_nexlogix/bot_hercule2/app/src/test/resources/features/views_and_search_vehiculos.feature:13)
+    [0m
+      [36mCuando [0m[36mbusca varias placas de vehiculos de la lista[0m                              [90m# stepdefinitions.ViewsAndSearchVehiculosSteps.busca_varias_placas_de_la_lista()[0m
+      [36mEntonces [0m[36mel sistema muestra los detalles del vehículo seleccionado correctamente[0m [90m# stepdefinitions.ViewsAndSearchVehiculosSteps.el_sistema_muestra_los_detalles_del_vehículo_seleccionado_correctamente()[0m
+    Debug hold active - keeping browser open for 120000 ms
+�Desea terminar el trabajo por lotes (S/N)? 

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Autenticación de administrador en Nexlogix" skipped="0" tests="1" time="128.9" timestamp="2025-11-08 10:20:44"><testcase name="Iniciar sesión como administrador usando credenciales correctas"/></testsuite>

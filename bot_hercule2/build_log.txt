@@ -1,0 +1,521 @@
+Initialized native services in: C:\Users\devel\.gradle\native
+Initialized jansi services in: C:\Users\devel\.gradle\native
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.0.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Starting process 'Gradle build daemon'. Working directory: C:\Users\devel\.gradle\daemon\9.0.0 Command: C:\Important_Routers\Java_jdk\bin\java.exe --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -XX:MaxMetaspaceSize=384m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=MX -Duser.language=es -Duser.variant -cp C:\Users\devel\.gradle\wrapper\dists\gradle-9.0.0-bin\d6wjpkvcgsg3oed0qlfss3wgl\gradle-9.0.0\lib\gradle-daemon-main-9.0.0.jar -javaagent:C:\Users\devel\.gradle\wrapper\dists\gradle-9.0.0-bin\d6wjpkvcgsg3oed0qlfss3wgl\gradle-9.0.0\lib\agents\gradle-instrumentation-agent-9.0.0.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.0.0
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 1.882 secs.
+The client will now receive all logging from the daemon (pid: 24412). The daemon log file: C:\Users\devel\.gradle\daemon\9.0.0\daemon-24412.out.log
+Daemon will be stopped at the end of the build 
+Using 16 worker leases.
+Received JVM installation metadata from 'C:\Important_Routers\Java_jdk': {JAVA_HOME=C:\Important_Routers\Java_jdk, JAVA_VERSION=21.0.6, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=21.0.6+8-LTS-188, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=21.0.6+8-LTS-188, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Calculating task graph as configuration cache cannot be reused because environment variable 'DIRNAME' has changed.
+Watching the file system is configured to be enabled if available
+Now considering [C:\projects_dev\bots_nexlogix\bot_hercule2] as hierarchies to watch
+File system watching is active
+Starting Build
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '1.0.0']
+Settings evaluated using settings file 'C:\projects_dev\bots_nexlogix\bot_hercule2\settings.gradle'.
+Projects loaded. Root project using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\build.gradle'.
+Included projects: [root project 'bot_hercule2', project ':app']
+
+> Configure project :
+Evaluating root project 'bot_hercule2' using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\build.gradle'.
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\build.gradle'.
+Resolved plugin [id: 'application']
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'idea']
+Resolved plugin [id: 'net.serenity-bdd.serenity-gradle-plugin', version: '4.2.8']
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'build'
+Selected primary task 'clean' from project :
+Selected primary task 'build' from project :
+Starting process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe''. Working directory: C:\Users\devel\.gradle\.tmp\tmp-jvm2780380519395282906probe Command: C:\Program Files\Java\jdk-17\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe''
+Received JVM installation metadata from 'C:\Program Files\Java\jdk-17': {JAVA_HOME=C:\Program Files\Java\jdk-17, JAVA_VERSION=17.0.12, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=17.0.12+8-LTS-286, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=17.0.12+8-LTS-286, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Starting process 'command 'C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe''. Working directory: C:\Users\devel\.gradle\.tmp\tmp-jvm2202469249698769573probe Command: C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Users\devel\.jdks\corretto-15.0.2\bin\java.exe''
+Received JVM installation metadata from 'C:\Users\devel\.jdks\corretto-15.0.2': {JAVA_HOME=C:\Users\devel\.jdks\corretto-15.0.2, JAVA_VERSION=15.0.2, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=15.0.2+7, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=15.0.2+7, VM_VENDOR=Amazon.com Inc., OS_ARCH=amd64}
+Tasks to be executed: [task ':app:clearReports', task ':app:clean', task ':app:compileJava', task ':app:processResources', task ':app:classes', task ':app:jar', task ':app:startScripts', task ':app:distTar', task ':app:distZip', task ':app:assemble', task ':app:compileTestJava', task ':app:processTestResources', task ':app:testClasses', task ':app:test', task ':app:aggregate', task ':app:checkOutcomes', task ':app:check', task ':app:build']
+Tasks that were excluded: []
+Ignoring listeners of task graph ready event, as this build (:) has already executed work.
+Resolve mutations for :app:clearReports (Thread[#172,Execution worker Thread 3,5,main]) started.
+:app:clearReports (Thread[#169,included builds,5,main]) started.
+
+> Task :app:clearReports
+Caching disabled for task ':app:clearReports' because:
+  Build cache is disabled
+Task ':app:clearReports' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:clean (Thread[#169,included builds,5,main]) started.
+:app:clean (Thread[#169,included builds,5,main]) started.
+destroyer locations for task group 0 (Thread[#172,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:compileJava (Thread[#172,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:processResources (Thread[#173,Execution worker Thread 4,5,main]) started.
+Resolve mutations for :app:processTestResources (Thread[#171,Execution worker Thread 2,5,main]) started.
+
+> Task :app:clean
+Caching disabled for task ':app:clean' because:
+  Build cache is disabled
+Task ':app:clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+:app:compileJava (Thread[#169,included builds,5,main]) started.
+:app:processResources (Thread[#172,Execution worker Thread 3,5,main]) started.
+:app:processTestResources (Thread[#171,Execution worker Thread 2,5,main]) started.
+
+> Task :app:processResources NO-SOURCE
+Skipping task ':app:processResources' as it has no source files and no previous output files.
+
+> Task :app:compileJava
+Caching disabled for task ':app:compileJava' because:
+  Build cache is disabled
+Task ':app:compileJava' is not up-to-date because:
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main\models has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\main\models\auth_user_admin.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:compileJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\Java\jdk-17'.
+Starting process 'Gradle Worker Daemon 1'. Working directory: C:\Users\devel\.gradle\workers Command: C:\Program Files\Java\jdk-17\bin\java.exe --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED @C:\Users\devel\.gradle\.tmp\gradle-worker-classpath7843366312380644044txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=MX -Duser.language=es -Duser.variant worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 1'
+Successfully started process 'Gradle Worker Daemon 1'
+
+> Task :app:processTestResources
+Caching disabled for task ':app:processTestResources' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:processTestResources' is not up-to-date because:
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test has been removed.
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test\driver has been removed.
+  Output property 'destinationDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\test\driver\chromedriver.exe has been removed.
+  and more...
+
+> Task :app:compileJava
+Started Gradle worker daemon (3.576 secs) with fork options DaemonForkOptions{executable=C:\Program Files\Java\jdk-17\bin\java.exe, minHeapSize=null, maxHeapSize=null, jvmArgs=[--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED], keepAliveMode=DAEMON}.
+
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+
+> Task :app:compileJava
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.04 secs.
+Created classpath snapshot for incremental compilation in 0.616 secs.
+Resolve mutations for :app:classes (Thread[#169,included builds,5,main]) started.
+:app:classes (Thread[#169,included builds,5,main]) started.
+
+> Task :app:classes
+Skipping task ':app:classes' as it has no actions.
+Resolve mutations for :app:jar (Thread[#169,included builds,5,main]) started.
+Resolve mutations for :app:compileTestJava (Thread[#172,Execution worker Thread 3,5,main]) started.
+:app:jar (Thread[#169,included builds,5,main]) started.
+:app:compileTestJava (Thread[#172,Execution worker Thread 3,5,main]) started.
+
+> Task :app:jar
+Caching disabled for task ':app:jar' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:jar' is not up-to-date because:
+  Output property 'archiveFile' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\libs\app.jar has been removed.
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\resources\main', not found
+Resolve mutations for :app:startScripts (Thread[#169,included builds,5,main]) started.
+:app:startScripts (Thread[#169,included builds,5,main]) started.
+
+> Task :app:compileTestJava
+Caching disabled for task ':app:compileTestJava' because:
+  Build cache is disabled
+Task ':app:compileTestJava' is not up-to-date because:
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test\runners has been removed.
+  Output property 'destinationDirectory' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\classes\java\test\runners\auth_nexlogix.class has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:compileTestJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\Java\jdk-17'.
+Compiling with JDK Java compiler API.
+
+> Task :app:startScripts
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Caching disabled for task ':app:startScripts' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:startScripts' is not up-to-date because:
+  Output property 'outputDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\scripts has been removed.
+  Output property 'outputDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\scripts\app has been removed.
+  Output property 'outputDir' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\scripts\app.bat has been removed.
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Resolve mutations for :app:distTar (Thread[#169,included builds,5,main]) started.
+Resolve mutations for :app:distZip (Thread[#177,Execution worker Thread 8,5,main]) started.
+:app:distTar (Thread[#169,included builds,5,main]) started.
+:app:distZip (Thread[#177,Execution worker Thread 8,5,main]) started.
+
+> Task :app:compileTestJava
+Class dependency analysis for incremental compilation took 0.23 secs.
+Created classpath snapshot for incremental compilation in 0.055 secs.
+Resolve mutations for :app:testClasses (Thread[#172,Execution worker Thread 3,5,main]) started.
+:app:testClasses (Thread[#172,Execution worker Thread 3,5,main]) started.
+
+> Task :app:testClasses
+Skipping task ':app:testClasses' as it has no actions.
+Resolve mutations for :app:test (Thread[#172,Execution worker Thread 3,5,main]) started.
+:app:test (Thread[#172,Execution worker Thread 3,5,main]) started.
+
+> Task :app:distTar
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Caching disabled for task ':app:distTar' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:distTar' is not up-to-date because:
+  Output property 'archiveFile' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\distributions\app.tar has been removed.
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\src\main\dist', not found
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\src\dist', not found
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+
+Gradle Test Executor 2 started executing tests.
+
+> Task :app:distZip
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Caching disabled for task ':app:distZip' because:
+  Build cache is disabled
+  Not worth caching
+Task ':app:distZip' is not up-to-date because:
+  Output property 'archiveFile' file C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\distributions\app.zip has been removed.
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\src\main\dist', not found
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\src\dist', not found
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Resolve mutations for :app:assemble (Thread[#177,Execution worker Thread 8,5,main]) started.
+:app:assemble (Thread[#177,Execution worker Thread 8,5,main]) started.
+
+> Task :app:assemble
+Skipping task ':app:assemble' as it has no actions.
+
+> Task :app:test
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Caching disabled for task ':app:test' because:
+  Build cache is disabled
+Task ':app:test' is not up-to-date because:
+  One or more additional actions for task ':app:test' have changed.
+file or directory 'C:\projects_dev\bots_nexlogix\bot_hercule2\app\libs', not found
+Starting process 'Gradle Test Executor 2'. Working directory: C:\projects_dev\bots_nexlogix\bot_hercule2\app Command: C:\Program Files\Java\jdk-17\bin\java.exe -Dorg.gradle.internal.worker.tmpdir=C:\projects_dev\bots_nexlogix\bot_hercule2\app\build\tmp\test\work @C:\Users\devel\.gradle\.tmp\gradle-worker-classpath7062423210293304033txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=MX -Duser.language=es -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2'
+Successfully started process 'Gradle Test Executor 2'
+
+ViewsAndSearchVehiculos STANDARD_ERROR
+    [Test worker] INFO  - 
+
+    -------------------------------------------------------------------------------------
+         _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+        /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+       |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+        \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+    .----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+    |_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+     News and tutorials at https://serenity-bdd.info                                     
+     Documentation at https://serenity-bdd.github.io                                     
+     Test Automation Training and Coaching: https://www.serenity-dojo.com                
+     Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+     Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+    -------------------------------------------------------------------------------------
+
+    [Test worker] INFO  - Test Suite Started: Ver y buscar conductores existentes
+    [Test worker] INFO  - Test Suite Started: Ver y buscar conductores existentes
+
+ViewsAndSearchVehiculos > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente STANDARD_OUT
+
+    @ViewAndSearchDriver
+    Escenario: Visualizar y buscar un conductor existente correctamente                           [90m# src/test/resources/features/views_and_search_vehiculos.feature:10[0m
+
+ViewsAndSearchVehiculos > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+     |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+       | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+       |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+    Visualizar y buscar un conductor existente correctamente(ver-y-buscar-conductores-existentes;visualizar-y-buscar-un-conductor-existente-correctamente)
+    --------------------------------------------------------------------------------
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+    nov. 08, 2025 9:34:09 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    WARNING: Unable to find CDP implementation matching 142
+    nov. 08, 2025 9:34:09 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+    WARNING: Unable to find version of CDP to use for 142.0.7444.61. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.26.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+ViewsAndSearchVehiculos > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente STANDARD_OUT
+    STEP: usuario administrador autenticado (via Login Task).
+      [32mDado [0m[32mel usuario es administrador y está autenticado en el sistema[0m                           [90m# stepdefinitions.view_and_search_routes.el_usuario_es_administrador_y_está_autenticado_en_el_sistema()[0m
+    STEP: navegar al módulo: Gestión Logística (stub).
+      [32mDado [0m[32mque se encuentra en el módulo [0m[32m[1m"Gestión Logística"[0m                                      [90m# stepdefinitions.view_and_search_routes.que_se_encuentra_en_el_módulo(java.lang.String)[0m
+      [32mDado [0m[32mque navega hasta la sección [0m[32m[1m"Conductores"[0m[32m mostrando la lista de conductores existentes[0m [90m# stepdefinitions.ViewsAndSearchDriversSteps.que_navega_hasta_la_sección_mostrando_la_lista_de_conductores_existentes(java.lang.String)[0m
+      [33mCuando [0m[33mbusca un conductor específico por su nombre o número de identificación[0m
+      [36mEntonces [0m[36mel sistema muestra los detalles del conductor seleccionado correctamente[0m           [90m# stepdefinitions.ViewsAndSearchDriversSteps.el_sistema_muestra_los_detalles_del_conductor_seleccionado_correctamente()[0m
+    Debug hold active - keeping browser open for 120000 ms
+
+Stopped 1 worker daemon(s).
+
+> Task :app:test
+
+ViewsAndSearchVehiculos > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+     |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+       | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+       |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+    Visualizar y buscar un conductor existente correctamente
+    -----------------------------------------------------------------------------
+
+ViewsAndSearchVehiculos > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente FAILED
+    io.cucumber.junit.UndefinedStepException: The step 'busca un conductor específico por su nombre o número de identificación' is undefined.
+    You can implement this step using the snippet(s) below:
+
+    @Cuando("busca un conductor específico por su nombre o número de identificación")
+    public void busca_un_conductor_específico_por_su_nombre_o_número_de_identificación() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+auth_nexlogix STANDARD_ERROR
+    [Test worker] INFO  - Test Suite Started: Autenticación de administrador en Nexlogix
+    [Test worker] INFO  - Test Suite Started: Autenticación de administrador en Nexlogix
+
+auth_nexlogix > Autenticación de administrador en Nexlogix > Iniciar sesión como administrador usando credenciales correctas STANDARD_OUT
+
+    @LoginAuth
+    Escenario: Iniciar sesión como administrador usando credenciales correctas                                 [90m# src/test/resources/features/auth_nexlogix_admin.feature:10[0m
+
+auth_nexlogix > Autenticación de administrador en Nexlogix > Iniciar sesión como administrador usando credenciales correctas STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+     |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+       | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+       |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+    Iniciar sesión como administrador usando credenciales correctas(autenticación-de-administrador-en-nexlogix;iniciar-sesión-como-administrador-usando-credenciales-correctas)
+    --------------------------------------------------------------------------------
+
+auth_nexlogix > Autenticación de administrador en Nexlogix > Iniciar sesión como administrador usando credenciales correctas STANDARD_OUT
+    Abriendo navegador Chrome...
+
+auth_nexlogix > Autenticación de administrador en Nexlogix > Iniciar sesión como administrador usando credenciales correctas STANDARD_ERROR
+    nov. 08, 2025 9:36:24 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    WARNING: Unable to find CDP implementation matching 142
+    nov. 08, 2025 9:36:24 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+    WARNING: Unable to find version of CDP to use for 142.0.7444.61. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.26.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+auth_nexlogix > Autenticación de administrador en Nexlogix > Iniciar sesión como administrador usando credenciales correctas STANDARD_OUT
+    Navegando a: http://localhost:5173/
+      [32mDado [0m[32mque el usuario navega a la página web de Nexlogix y se encuentra en la pantalla de inicio de sesión[0m [90m# stepdefinitions.auth_stepdefinition.que_el_usuario_navega_a_la_página_web_de_nexlogix_y_se_encuentra_en_la_pantalla_de_inicio_de_sesión()[0m
+    Ingresando credenciales...
+    Email: deivgonz777@gmail.com
+    Password: Hero77777
+      [32mCuando [0m[32mingrese las siguientes credenciales:[0m                                                              [90m# stepdefinitions.auth_stepdefinition.ingrese_las_siguientes_credenciales(io.cucumber.datatable.DataTable)[0m
+        | Email                 | Password  |
+        | deivgonz777@gmail.com | Hero77777 |
+    Verificando que el login fue exitoso...
+    http://localhost:5173/Manager
+      [32mEntonces [0m[32mel sistema deberá autenticarlo correctamente y mostrar el panel de administración[0m               [90m# stepdefinitions.auth_stepdefinition.el_sistema_deberá_autenticarlo_correctamente_y_mostrar_el_panel_de_administración()[0m
+    Debug hold active - keeping browser open for 120000 ms
+
+auth_nexlogix > Autenticación de administrador en Nexlogix > Iniciar sesión como administrador usando credenciales correctas STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+     |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+       | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+       |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+    Iniciar sesión como administrador usando credenciales correctas
+    ----------------------------------------------------------------------
+
+views_and_search_cities STANDARD_ERROR
+    [Test worker] INFO  - Test Suite Started: Ver y buscar ciudades existentes
+    [Test worker] INFO  - Test Suite Started: Ver y buscar ciudades existentes
+
+views_and_search_cities > Ver y buscar ciudades existentes > Visualizar y buscar una ciudad existente correctamente STANDARD_OUT
+
+    @ViewAndSearchCity
+    Escenario: Visualizar y buscar una ciudad existente correctamente                       [90m# src/test/resources/features/views_and_search_cities.feature:10[0m
+
+views_and_search_cities > Ver y buscar ciudades existentes > Visualizar y buscar una ciudad existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+     |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+       | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+       |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+    Visualizar y buscar una ciudad existente correctamente(ver-y-buscar-ciudades-existentes;visualizar-y-buscar-una-ciudad-existente-correctamente)
+    --------------------------------------------------------------------------------
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+    nov. 08, 2025 9:38:33 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    WARNING: Unable to find CDP implementation matching 142
+    nov. 08, 2025 9:38:33 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+    WARNING: Unable to find version of CDP to use for 142.0.7444.61. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.26.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+views_and_search_cities > Ver y buscar ciudades existentes > Visualizar y buscar una ciudad existente correctamente STANDARD_OUT
+    STEP: usuario administrador autenticado (via Login Task).
+      [32mDado [0m[32mel usuario es administrador y está autenticado en el sistema[0m                     [90m# stepdefinitions.view_and_search_routes.el_usuario_es_administrador_y_está_autenticado_en_el_sistema()[0m
+    STEP: navegar al módulo: Gestión Logística (stub).
+      [32mDado [0m[32mque se encuentra en el módulo [0m[32m[1m"Gestión Logística"[0m                                [90m# stepdefinitions.view_and_search_routes.que_se_encuentra_en_el_módulo(java.lang.String)[0m
+    STEP: navegar a la sección 'Ciudades' mostrando lista de ciudades (automated).
+      [32mDado [0m[32mque navega hasta la sección [0m[32m[1m"Ciudades"[0m[32m mostrando la lista de ciudades existentes[0m [90m# stepdefinitions.ViewsAndSearchCitiesSteps.que_navega_hasta_la_sección_mostrando_la_lista_de_ciudades_existentes(java.lang.String)[0m
+    STEP: buscar ciudad por nombre (automated).
+      [32mCuando [0m[32mbusca una ciudad específica por su nombre[0m                                      [90m# stepdefinitions.ViewsAndSearchCitiesSteps.busca_una_ciudad_específica_por_su_nombre()[0m
+    STEP: verificar detalles de la ciudad seleccionada (automated).
+      [32mEntonces [0m[32mel sistema muestra los detalles de la ciudad seleccionada correctamente[0m      [90m# stepdefinitions.ViewsAndSearchCitiesSteps.el_sistema_muestra_los_detalles_de_la_ciudad_seleccionada_correctamente()[0m
+    Debug hold active - keeping browser open for 120000 ms
+
+views_and_search_cities > Ver y buscar ciudades existentes > Visualizar y buscar una ciudad existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+     |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+       | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+       |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+    Visualizar y buscar una ciudad existente correctamente
+    ----------------------------------------------------------------------
+
+views_and_search_drivers STANDARD_ERROR
+    [Test worker] INFO  - Test Suite Started: Ver y buscar conductores existentes
+    [Test worker] INFO  - Test Suite Started: Ver y buscar conductores existentes
+
+views_and_search_drivers > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente STANDARD_OUT
+
+    @ViewAndSearchDriver
+    Escenario: Visualizar y buscar un conductor existente correctamente                                 [90m# src/test/resources/features/views_and_search_drivers.feature:10[0m
+
+views_and_search_drivers > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+     |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+       | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+       |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+    Visualizar y buscar un conductor existente correctamente(ver-y-buscar-conductores-existentes;visualizar-y-buscar-un-conductor-existente-correctamente)
+    --------------------------------------------------------------------------------
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+    nov. 08, 2025 9:41:00 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    WARNING: Unable to find CDP implementation matching 142
+    nov. 08, 2025 9:41:00 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+    WARNING: Unable to find version of CDP to use for 142.0.7444.61. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.26.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+views_and_search_drivers > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente STANDARD_OUT
+    STEP: usuario administrador autenticado (via Login Task).
+      [32mDado [0m[32mel usuario es administrador y está autenticado en el sistema[0m                                 [90m# stepdefinitions.view_and_search_routes.el_usuario_es_administrador_y_está_autenticado_en_el_sistema()[0m
+    STEP: navegar al módulo: Gestión Logística (stub).
+      [32mDado [0m[32mque se encuentra en el módulo [0m[32m[1m"Gestión Logística"[0m                                            [90m# stepdefinitions.view_and_search_routes.que_se_encuentra_en_el_módulo(java.lang.String)[0m
+      [32mDado [0m[32mque navega hasta la sección [0m[32m[1m"Conductores"[0m[32m mostrando la lista de conductores existentes[0m       [90m# stepdefinitions.ViewsAndSearchDriversSteps.que_navega_hasta_la_sección_mostrando_la_lista_de_conductores_existentes(java.lang.String)[0m
+      [32mCuando [0m[32mbusca un conductor específico por su nombre, número de identificación o numero de licencia[0m [90m# stepdefinitions.ViewsAndSearchDriversSteps.busca_un_conductor_específico_por_su_nombre_número_de_identificación_o_numero_de_licencia()[0m
+    STEP: comprobar detalles del conductor (tabla visible).
+      [32mEntonces [0m[32mel sistema muestra los detalles del conductor seleccionado correctamente[0m                 [90m# stepdefinitions.ViewsAndSearchDriversSteps.el_sistema_muestra_los_detalles_del_conductor_seleccionado_correctamente()[0m
+    Debug hold active - keeping browser open for 120000 ms
+
+views_and_search_drivers > Ver y buscar conductores existentes > Visualizar y buscar un conductor existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+     |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+       | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+       |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+    Visualizar y buscar un conductor existente correctamente
+    ----------------------------------------------------------------------
+
+views_and_search_routes STANDARD_ERROR
+    [Test worker] INFO  - Test Suite Started: Ver y buscar una ruta existente
+    [Test worker] INFO  - Test Suite Started: Ver y buscar una ruta existente
+
+views_and_search_routes > Ver y buscar una ruta existente > Visualizar y buscar una ruta existente correctamente STANDARD_OUT
+
+    @ViewAndSearchRoute
+    Escenario: Visualizar y buscar una ruta existente correctamente                   [90m# src/test/resources/features/views_and_search_routes.feature:10[0m
+
+views_and_search_routes > Ver y buscar una ruta existente > Visualizar y buscar una ruta existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+     |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+       | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+       |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+    Visualizar y buscar una ruta existente correctamente(ver-y-buscar-una-ruta-existente;visualizar-y-buscar-una-ruta-existente-correctamente)
+    --------------------------------------------------------------------------------
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+    nov. 08, 2025 9:43:19 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    WARNING: Unable to find CDP implementation matching 142
+    nov. 08, 2025 9:43:19 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+    WARNING: Unable to find version of CDP to use for 142.0.7444.61. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.26.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+views_and_search_routes > Ver y buscar una ruta existente > Visualizar y buscar una ruta existente correctamente STANDARD_OUT
+    STEP: usuario administrador autenticado (via Login Task).
+      [32mDado [0m[32mel usuario es administrador y está autenticado en el sistema[0m               [90m# stepdefinitions.view_and_search_routes.el_usuario_es_administrador_y_está_autenticado_en_el_sistema()[0m
+    STEP: navegar al módulo: Gestión Logística (stub).
+      [32mDado [0m[32mque se encuentra en el módulo [0m[32m[1m"Gestión Logística"[0m                          [90m# stepdefinitions.view_and_search_routes.que_se_encuentra_en_el_módulo(java.lang.String)[0m
+    STEP: navegó a la sección 'Rutas' - Lista de rutas cargada.
+      [32mDado [0m[32mque navega hasta la sección [0m[32m[1m"Rutas"[0m[32m mostrando la lista de rutas existentes[0m [90m# stepdefinitions.view_and_search_routes.que_navega_hasta_la_sección_mostrando_la_lista_de_rutas_existentes(java.lang.String)[0m
+      [33mCuando [0m[33mbusca una ruta específica por su nombre o ID[0m
+      [36mEntonces [0m[36mel sistema muestra los detalles de la ruta seleccionada correctamente[0m  [90m# stepdefinitions.view_and_search_routes.el_sistema_muestra_los_detalles_de_la_ruta_seleccionada_correctamente()[0m
+    Debug hold active - keeping browser open for 120000 ms
+
+views_and_search_routes > Ver y buscar una ruta existente > Visualizar y buscar una ruta existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+     |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+       | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+       |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+    Visualizar y buscar una ruta existente correctamente
+    -----------------------------------------------------------------------------
+
+views_and_search_routes > Ver y buscar una ruta existente > Visualizar y buscar una ruta existente correctamente FAILED
+    io.cucumber.junit.UndefinedStepException: The step 'busca una ruta específica por su nombre o ID' is undefined.
+    You can implement this step using the snippet(s) below:
+
+    @Cuando("busca una ruta específica por su nombre o ID")
+    public void busca_una_ruta_específica_por_su_nombre_o_id() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+views_and_search_users STANDARD_ERROR
+    [Test worker] INFO  - Test Suite Started: Ver y buscar usuarios existentes
+    [Test worker] INFO  - Test Suite Started: Ver y buscar usuarios existentes
+
+views_and_search_users > Ver y buscar usuarios existentes > Visualizar y buscar un usuario existente correctamente STANDARD_OUT
+
+    @ViewAndSearchUser
+    Escenario: Visualizar y buscar un usuario existente correctamente                       [90m# src/test/resources/features/views_and_search_users.feature:10[0m
+
+views_and_search_users > Ver y buscar usuarios existentes > Visualizar y buscar un usuario existente correctamente STANDARD_ERROR
+    [Test worker] INFO  - 
+      _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+     |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+       | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+       |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+    Visualizar y buscar un usuario existente correctamente(ver-y-buscar-usuarios-existentes;visualizar-y-buscar-un-usuario-existente-correctamente)
+    --------------------------------------------------------------------------------
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+    [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+    nov. 08, 2025 9:45:30 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    WARNING: Unable to find CDP implementation matching 142
+    nov. 08, 2025 9:45:30 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+    WARNING: Unable to find version of CDP to use for 142.0.7444.61. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.26.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+views_and_search_users > Ver y buscar usuarios existentes > Visualizar y buscar un usuario existente correctamente STANDARD_OUT
+    STEP: usuario administrador autenticado (via Login Task).
+      [32mDado [0m[32mel usuario es administrador y está autenticado en el sistema[0m                     [90m# stepdefinitions.view_and_search_routes.el_usuario_es_administrador_y_está_autenticado_en_el_sistema()[0m
+    STEP: navegar al módulo: Administración (stub).
+      [32mDado [0m[32mque se encuentra en el módulo [0m[32m[1m"Administración"[0m                                   [90m# stepdefinitions.view_and_search_routes.que_se_encuentra_en_el_módulo(java.lang.String)[0m
+    STEP: navegar a la sección 'Usuarios' mostrando lista de usuarios (stub).
+      [32mDado [0m[32mque navega hasta la sección [0m[32m[1m"Usuarios"[0m[32m mostrando la lista de usuarios existentes[0m [90m# stepdefinitions.ViewsAndSearchUsersSteps.que_navega_hasta_la_sección_mostrando_la_lista_de_usuarios_existentes(java.lang.String)[0m
+    STEP: buscar usuario por ID/email/numero identidad (stub).
+      [32mCuando [0m[32mbusca un usuario específico por su ID, email o número de identidad[0m             [90m# stepdefinitions.ViewsAndSearchUsersSteps.busca_un_usuario_específico_por_su_id_email_o_número_de_identidad()[0m
+    STEP: verificar detalles del usuario seleccionado (stub).
+      [32mEntonces [0m[32mel sistema muestra los detalles del usuario seleccionado correctamente[0m       [90m# stepdefinitions.ViewsAndSearchUsersSteps.el_sistema_muestra_los_detalles_del_usuario_seleccionado_correctamente()[0m
+    Debug hold active - keeping browser open for 120000 ms
+�Desea terminar el trabajo por lotes (S/N)? 
+^C

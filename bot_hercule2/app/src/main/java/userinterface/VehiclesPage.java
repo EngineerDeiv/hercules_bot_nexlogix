@@ -17,4 +17,12 @@ public class VehiclesPage {
     public static final Target TABLE_RESULTS = Target.the("Tabla de resultados de vehículos")
             .located(By.cssSelector(".custom-table-wrapper, table"));
 
+    // Botón para mostrar todos los vehículos (según el HTML mostrado en la imagen)
+    public static final Target BTN_MOSTRAR_TODOS = Target.the("Botón Mostrar todos")
+            .located(By.xpath("//button[contains(@class,'btn-success') and contains(normalize-space(.),'Mostrar')]") );
+
+    // Botón para crear vehículo
+    public static final Target BTN_CREAR_VEHICULO = Target.the("Botón Crear vehículo")
+            .located(By.xpath("//button[contains(@class,'btn-warning') and contains(normalize-space(.),'Crear')]") );
+
 }
