@@ -211,4 +211,5 @@ ViewsAndSearchVehiculos > Ver y buscar veh√≠culos existentes > Visualizar y busc
       [36mCuando [0m[36mbusca varias placas de vehiculos de la lista[0m                              [90m# stepdefinitions.ViewsAndSearchVehiculosSteps.busca_varias_placas_de_la_lista()[0m
       [36mEntonces [0m[36mel sistema muestra los detalles del veh√≠culo seleccionado correctamente[0m [90m# stepdefinitions.ViewsAndSearchVehiculosSteps.el_sistema_muestra_los_detalles_del_veh√≠culo_seleccionado_correctamente()[0m
     Debug hold active - keeping browser open for 120000 ms
-®Desea terminar el trabajo por lotes (S/N)? 
+®Desea terminar el trabajo por lotes (S/N)? ®Desea terminar el trabajo por lotes (S/N)? 
+^C

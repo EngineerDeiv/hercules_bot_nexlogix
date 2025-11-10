@@ -22,9 +22,9 @@ public class Hooks {
         if (holdMs == null || holdMs.isEmpty()) {
             holdMs = System.getProperty("debug.hold.ms");
         }
-        // If no value provided, default to 120000 ms (2 minutes) so the browser stays open locally.
+        // If no value provided, default to 0 ms (no hold). Set DEBUG_HOLD_MS env or system property to enable.
         if (holdMs == null || holdMs.isEmpty()) {
-            holdMs = "120000";
+            holdMs = "0";
         }
         if (holdMs != null && !holdMs.isEmpty()) {
             try {

@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Clear;
+import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.targets.Target;
 import net.serenitybdd.screenplay.waits.WaitUntil;
@@ -52,16 +53,18 @@ public class view_and_search_routes {
         System.out.println("STEP: navegó a la sección '" + sectionName + "' - Lista de rutas cargada.");
     }
 
-    @Cuando("busca una ruta específica por su nombre o código")
+    @Cuando("busca una ruta específica por su nombre o ID")
     public void busca_una_ruta_específica_por_su_nombre_o_código() {
         System.out.println("STEP: Iniciando búsqueda de ruta por ID: " + ROUTE_ID_TO_SEARCH);
         
         // Usar el campo ID de Ruta que es más simple
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                WaitUntil.the(RoutesPage.INPUT_ID_RUTA, isVisible()).forNoMoreThan(15).seconds(),
-                Click.on(RoutesPage.INPUT_ID_RUTA),
-                Enter.theValue(ROUTE_ID_TO_SEARCH).into(RoutesPage.INPUT_ID_RUTA)
-        );
+    OnStage.theActorInTheSpotlight().attemptsTo(
+        WaitUntil.the(RoutesPage.INPUT_ID_RUTA, isVisible()).forNoMoreThan(15).seconds(),
+        Scroll.to(RoutesPage.INPUT_ID_RUTA),
+        Click.on(RoutesPage.INPUT_ID_RUTA),
+        Clear.field(RoutesPage.INPUT_ID_RUTA),
+        Enter.theValue(ROUTE_ID_TO_SEARCH).into(RoutesPage.INPUT_ID_RUTA)
+    );
         
         // Pequeña pausa antes de buscar
         try {
@@ -71,7 +74,8 @@ public class view_and_search_routes {
         }
         
         OnStage.theActorInTheSpotlight().attemptsTo(
-                Click.on(RoutesPage.BTN_BUSCAR)
+        WaitUntil.the(RoutesPage.BTN_BUSCAR, isVisible()).forNoMoreThan(10).seconds(),
+        Click.on(RoutesPage.BTN_BUSCAR)
         );
         
         System.out.println("STEP: Búsqueda ejecutada para ruta ID: " + ROUTE_ID_TO_SEARCH);
@@ -90,12 +94,7 @@ public class view_and_search_routes {
         );
         System.out.println("STEP: Sistema muestra correctamente los detalles de la ruta ID: " + ROUTE_ID_TO_SEARCH);
         
-        // Hold para debug por 2 minutos
-        try {
-            Thread.sleep(120000); // 2 minutos
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+        // No long debug hold here; tests should finish promptly.
     }
 
 }
