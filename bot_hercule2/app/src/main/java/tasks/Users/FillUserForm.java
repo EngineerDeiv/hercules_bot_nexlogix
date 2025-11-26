@@ -25,16 +25,16 @@ public class FillUserForm implements Task {
             .located(By.name("email")); 
             
     public static final Target PHONE_FIELD = Target.the("Campo Teléfono")
-            .located(By.name("telefono")); 
+            .located(By.name("numContacto")); 
             
     public static final Target ADDRESS_FIELD = Target.the("Campo Dirección")
-            .located(By.name("direccion")); 
+            .located(By.name("direccionResidencia")); 
             
     public static final Target PASSWORD_FIELD = Target.the("Campo Contraseña")
-            .located(By.name("password")); 
+            .located(By.name("contrasena")); 
             
     public static final Target SAVE_BUTTON = Target.the("Botón Guardar")
-            .located(By.xpath("//button[contains(text(), 'Guardar')]"));
+            .located(By.xpath("//button[contains(@class, 'btn-primary') and contains(text(), 'Guardar')]"));
 
     public FillUserForm(createUser user) {
         this.user = user;

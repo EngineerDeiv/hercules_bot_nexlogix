@@ -9,5 +9,5 @@ Característica: Buscar usuario existente
 
   Escenario: Buscar usuario por criterio específico
     Dado que el administrador está en la lista de usuarios
-    Cuando busca un usuario con el criterio "xxxxx"
-    Entonces el sistema debe mostrar al usuario "xxxxx" en los resultados
+    Cuando busca un usuario con el criterio "Nuevo"
+    Entonces el sistema debe mostrar al usuario "Nuevo" en los resultados
