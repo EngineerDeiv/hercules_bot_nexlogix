@@ -12,5 +12,5 @@ Característica: Crear nuevo usuario en Nexlogix
     Cuando navega a la sección de creación de usuarios
     Y ingresa los datos del nuevo usuario
       | Nombre             | Email                      | Rol     |
-      | Mauricio Canavirez | josejose48554@nexlogix.com | Manager |
+      | Mauricio Canavirez | da78asssss@nexlogix.com    | Manager |
     Entonces el usuario debe ser creado exitosamente y aparecer en la lista

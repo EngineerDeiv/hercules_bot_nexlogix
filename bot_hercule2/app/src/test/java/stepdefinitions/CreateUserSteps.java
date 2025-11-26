@@ -40,9 +40,12 @@ public class CreateUserSteps {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         Map<String, String> row = data.get(0); // Tomamos la primera fila
 
+        // Guardamos el email en el contexto para usarlo en la búsqueda
+        utils_and_hooks.TestContext.createdUserEmail = row.get("Email");
+
         // Creamos el modelo con los datos de la tabla (y algunos defaults para los que no vienen)
         createUser newUser = new createUser(
-                "1004541322", // Documento default o aleatorio
+                "1004545545", // Documento default o aleatorio
                 row.get("Nombre"),
                 row.get("Email"),
                 "3001234567", // Teléfono default

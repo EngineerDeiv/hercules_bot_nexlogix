@@ -13,9 +13,12 @@ public class SearchForUser implements Task {
 
     private final String searchTerm;
 
-    // Target PROVISIONAL (Ajustar según el HTML real de la barra de búsqueda)
+    // Target actualizado con el HTML proporcionado
     public static final Target SEARCH_INPUT = Target.the("Barra de búsqueda de usuarios")
-            .located(By.cssSelector("input[placeholder='Buscar...']")); // Selector común, verificar
+            .located(By.cssSelector("input[placeholder='Buscar por ID, documento o email...']"));
+
+    public static final Target SEARCH_BUTTON = Target.the("Botón Buscar")
+            .located(By.xpath("//button[contains(text(),'Buscar')]"));
 
     public SearchForUser(String searchTerm) {
         this.searchTerm = searchTerm;
@@ -28,7 +31,8 @@ public class SearchForUser implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(searchTerm).into(SEARCH_INPUT).thenHit(Keys.ENTER)
+                Enter.theValue(searchTerm).into(SEARCH_INPUT),
+                net.serenitybdd.screenplay.actions.Click.on(SEARCH_BUTTON)
         );
     }
 }
