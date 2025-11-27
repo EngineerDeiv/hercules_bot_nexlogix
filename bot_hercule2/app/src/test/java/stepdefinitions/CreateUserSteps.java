@@ -20,7 +20,6 @@ public class CreateUserSteps {
 
     @Dado("que el administrador ha iniciado sesión y está en el panel principal")
     public void que_el_administrador_ha_iniciado_sesion_y_esta_en_el_panel_principal() {
-        // Usamos la tarea de Login existente para autenticarnos como admin
         theActorInTheSpotlight().attemptsTo(
                 Login.asAdmin()
         );
@@ -28,7 +27,6 @@ public class CreateUserSteps {
 
     @Cuando("navega a la sección de creación de usuarios")
     public void navega_a_la_seccion_de_creacion_de_usuarios() {
-        // Navegamos al menú de usuarios y luego damos clic en "Crear usuario"
         theActorInTheSpotlight().attemptsTo(
                 RoutersUsers.toUsersPage(),
                 NavUsers.clickCreateUser()
@@ -40,23 +38,22 @@ public class CreateUserSteps {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         Map<String, String> row = data.get(0); // Tomamos la primera fila
 
-        // Guardamos el email en el contexto para usarlo en la búsqueda
+        // Guarda el email
         utils_and_hooks.TestContext.createdUserEmail = row.get("Email");
 
-        // Creamos el modelo con los datos de la tabla (y algunos defaults para los que no vienen)
+        // creacion user
         createUser newUser = new createUser(
-                "1004545545", // Documento default o aleatorio
+                "1522789453",
                 row.get("Nombre"),
                 row.get("Email"),
-                "3001234567", // Teléfono default
-                "Calle Falsa 123", // Dirección default
-                "Password123", // Contraseña default
+                "3001234567", // Teléfono
+                "Calle Falsa 123", // Dirección
+                "Password123", // Contraseña
                 row.get("Rol"),
-                "Gerente General de Sistemas", // Puesto default (ajustar según necesidad)
-                "ACTIVO" // Estado default
+                "Gerente General de Sistemas", // Puesto
+                "ACTIVO"
         );
 
-        // Ejecutamos la tarea de llenar el formulario
         theActorInTheSpotlight().attemptsTo(
                 FillUserForm.withData(newUser)
         );
@@ -64,7 +61,6 @@ public class CreateUserSteps {
 
     @Entonces("el usuario debe ser creado exitosamente y aparecer en la lista")
     public void el_usuario_debe_ser_creado_exitosamente_y_aparecer_en_la_lista() {
-        // Aquí iría la validación (Question), por ahora dejamos el log
         System.out.println("STEP: Verificando que el usuario fue creado y aparece en la lista");
         try {
             Thread.sleep(12000); // Espera de 12 segundos solicitada

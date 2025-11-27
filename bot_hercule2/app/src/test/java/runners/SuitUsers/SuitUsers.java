@@ -2,6 +2,7 @@ package runners.SuitUsers;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+import runners.CreateAreaRunner;
 import runners.CreateUserRunner;
 import runners.auth_nexlogix;
 
@@ -9,7 +10,10 @@ import runners.auth_nexlogix;
 @Suite.SuiteClasses({
     auth_nexlogix.class,
     CreateUserRunner.class,
-    runners.SearchUserRunner.class
+    runners.SearchUserRunner.class,
+    CreateAreaRunner.class,
+    runners.SearchAreaRunner.class
+
 })
 public class SuitUsers {
 }
