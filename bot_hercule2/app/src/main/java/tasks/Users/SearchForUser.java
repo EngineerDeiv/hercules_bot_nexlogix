@@ -13,7 +13,6 @@ public class SearchForUser implements Task {
 
     private final String searchTerm;
 
-    // Target actualizado con el HTML proporcionado
     public static final Target SEARCH_INPUT = Target.the("Barra de búsqueda de usuarios")
             .located(By.cssSelector("input[placeholder='Buscar por ID, documento o email...']"));
 

@@ -14,7 +14,6 @@ public class FillUserForm implements Task {
 
     private final createUser user;
 
-    // Targets PROVISIONALES (Verificar con el HTML real)
     public static final Target DOCUMENT_FIELD = Target.the("Campo Documento de Identidad")
             .located(By.name("documentoIdentidad")); 
             
@@ -49,10 +48,11 @@ public class FillUserForm implements Task {
                 Enter.theValue(user.getTelefono()).into(PHONE_FIELD),
                 Enter.theValue(user.getDireccion()).into(ADDRESS_FIELD),
                 Enter.theValue(user.getContrasena()).into(PASSWORD_FIELD),
-                
-                // Reutilizamos la tarea de listas que ya creamos
+
+                // listas desplegables
                 ListUtil.withValues(user.getRol(), user.getPuesto(), user.getEstado()),
-                
+
+                // Guardar
                 Click.on(SAVE_BUTTON)
         );
     }

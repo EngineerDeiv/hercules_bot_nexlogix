@@ -10,8 +10,6 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class RoutersUsers implements Task {
 
-    // Target para desplegar el menú Administración
-    // Usamos el href para evitar problemas de codificación con la tilde en 'Administración'
     public static final Target ADMINISTRATION_MENU = Target.the("Menú Administración")
             .located(By.xpath("//a[contains(@href, '#administracion')]"));
 

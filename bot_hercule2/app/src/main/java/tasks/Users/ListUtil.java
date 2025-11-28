@@ -14,7 +14,6 @@ public class ListUtil implements Task {
     private final String puesto;
     private final String estado;
 
-    // Targets basados en el atributo 'name' visto en las capturas
     public static final Target ROLE_DROPDOWN = Target.the("Lista desplegable de Rol")
             .located(By.cssSelector("select[name='idRole']"));
 

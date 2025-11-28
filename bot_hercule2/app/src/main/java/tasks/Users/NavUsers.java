@@ -10,7 +10,6 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class NavUsers implements Task {
 
-    // Target para el botón "Crear usuario" basado en su clase y texto
     public static final Target CREATE_USER_BUTTON = Target.the("Botón Crear usuario")
             .located(By.xpath("//button[contains(@class, 'btn-warning') and contains(text(), 'Crear usuario')]"));
 
