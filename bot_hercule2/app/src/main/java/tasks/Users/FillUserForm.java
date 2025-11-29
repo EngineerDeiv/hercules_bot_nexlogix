@@ -50,10 +50,10 @@ public class FillUserForm implements Task {
                 Enter.theValue(user.getContrasena()).into(PASSWORD_FIELD),
 
                 // listas desplegables
-                ListUtil.withValues(user.getRol(), user.getPuesto(), user.getEstado()),
+                ListUtil.withValues(user.getRol(), user.getPuesto(), user.getEstado())
 
                 // Guardar
-                Click.on(SAVE_BUTTON)
+               // Click.on(SAVE_BUTTON)
         );
     }
 

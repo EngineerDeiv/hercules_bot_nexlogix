@@ -152,7 +152,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 08-11-2025 22:43</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-11-2025 20:31</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,7 +189,7 @@ Para validar que puedo acceder a la información de la ruta correctamente
                             </p>
                             <p class="tag">
                                 <span class="badge tag-badge" style="background:default;"
-                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="5698da923f295f46ce5ab64ced2311fc60caa4e36b32112606d3adcfdce3f60b.html">30 To 60 Seconds
                                         (Duration)
                                 </a>
                                 </span>
@@ -202,9 +202,9 @@ Para validar que puedo acceder a la información de la ruta correctamente
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Visualizar y buscar una ruta existente correctamente
+                                <span class="failing-color">Visualizar y buscar una ruta existente correctamente
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -221,31 +221,65 @@ Para validar que puedo acceder a la información de la ruta correctamente
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.xpath: //a[contains(normalize-space(.),'Gesti&oacute;n Log&iacute;stica') or contains(.,'Gesti&oacute;n Log&iacute;stica')] to be present (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '4.26.0', revision: '8ccf0219d7'System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>stepdefinitions.view_and_search_routes.que_navega_hasta_la_sección_mostrando_la_lista_de_rutas_existentes(view_and_search_routes.java:47)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //a[contains(normalize-space(.),'Gestión Logística') or contains(.,'Gestión Logística')] to be present (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '4.26.0', revision: '8ccf0219d7'<br>System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'<br>Driver info: driver.version: unknown</pre>
+                        <pre>stepdefinitions.view_and_search_routes.que_navega_hasta_la_sección_mostrando_la_lista_de_rutas_existentes(view_and_search_routes.java :47)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource17100614205679887839.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="53492bbe8b1c74a576105188a4158a5370e177897bf6d12ee67ac5e8a3c1b479.png" title=" Dado el usuario es administrador y est&aacute; autenticado en el sistema" width="0"/>
-                <img src="53492bbe8b1c74a576105188a4158a5370e177897bf6d12ee67ac5e8a3c1b479.png" title=" Admin login" width="0"/>
-                <img src="53492bbe8b1c74a576105188a4158a5370e177897bf6d12ee67ac5e8a3c1b479.png" title=" Admin open page" width="0"/>
-                <img src="53492bbe8b1c74a576105188a4158a5370e177897bf6d12ee67ac5e8a3c1b479.png" title=" admin opens the browser at http://localhost:5173/" width="0"/>
-                <img src="53492bbe8b1c74a576105188a4158a5370e177897bf6d12ee67ac5e8a3c1b479.png" title=" Admin open page (completed)" width="0"/>
-                <img src="15e096812c7c3ff39e282b64b44a83f8b18020be922ae198f1a7d862085e83e4.png" title=" admin enters 'deivgonz777@gmail.com' into Campo de email" width="0"/>
-                <img src="d4da1e6ec0711a2170b5de4b98fbbf9035bd96ad5a4aa9ea8153c6d099bd0d51.png" title=" admin enters 'Hero77777' into Campo de contrase&ntilde;a" width="0"/>
-                <img src="618e6f90090182f167c43238d59f435c53d5139fc2c48d76049dbe5d3e5cf55e.png" title=" admin clicks on Bot&oacute;n de iniciar sesi&oacute;n" width="0"/>
-                <img src="618e6f90090182f167c43238d59f435c53d5139fc2c48d76049dbe5d3e5cf55e.png" title=" Admin login (completed)" width="0"/>
-                <img src="618e6f90090182f167c43238d59f435c53d5139fc2c48d76049dbe5d3e5cf55e.png" title=" Dado el usuario es administrador y est&aacute; autenticado en el sistema (completed)" width="0"/>
-                <img src="385337315855b9ad705b3185d19d25b3f09baa321fcd85f3743d8e6f67220738.png" title=" Dado que se encuentra en el m&oacute;dulo &quot;Gesti&oacute;n Log&iacute;stica&quot;" width="0"/>
-                <img src="48906cc31bad2a05ce272c402104732dd095997df00bb2fc4b6875371b980746.png" title=" Dado que navega hasta la secci&oacute;n &quot;Rutas&quot; mostrando la lista de rutas existentes" width="0"/>
-                <img src="48906cc31bad2a05ce272c402104732dd095997df00bb2fc4b6875371b980746.png" title=" admin clicks on Toggle Gesti&oacute;n Log&iacute;stica" width="0"/>
-                <img src="c99e053d061c97b31d7ed94b10ec0750603c9308d655527479905e647f44cf95.png" title=" admin clicks on Submenu Rutas" width="0"/>
-                <img src="ca6ec015447b1e70ba0a2683ca2180363c805f861edf75d144282cf470c877b0.png" title=" Dado que navega hasta la secci&oacute;n &quot;Rutas&quot; mostrando la lista de rutas existentes (completed)" width="0"/>
-                <img src="cf6f0f17b697072229408c69eefb61e3ccc67b194dcd7c6e3e80eee92cddeb0b.png" title=" Cuando busca una ruta espec&iacute;fica por su nombre o ID" width="0"/>
-                <img src="cf6f0f17b697072229408c69eefb61e3ccc67b194dcd7c6e3e80eee92cddeb0b.png" title=" admin clicks on Campo ID de Ruta" width="0"/>
-                <img src="832b830a293af1304283f1ee6b76b6f43e54579bdbc631debcf25eb5aa732bbd.png" title=" admin clears field Campo ID de Ruta" width="0"/>
-                <img src="235b9cdeb77df6da806043a1fafb2f288464d8bc1b6d890b4b31e36e1cfdec4e.png" title=" admin enters '17' into Campo ID de Ruta" width="0"/>
-                <img src="8ea5f895427e30a193b958d8010f46c004ce42c49b1ae613810b493e5f02691f.png" title=" admin clicks on Bot&oacute;n Buscar" width="0"/>
-                <img src="95c34e3a974fe0f37a9144d4c1fc643bbebb8d6779154e300ca896d75913755b.png" title=" Cuando busca una ruta espec&iacute;fica por su nombre o ID (completed)" width="0"/>
+                <img src="f3c82476ca5faa2480ce73fa0e5fed7a979a0c8d187860f92f8584e293456f58.png" title=" Dado el usuario es administrador y est&aacute; autenticado en el sistema" width="0"/>
+                <img src="f3c82476ca5faa2480ce73fa0e5fed7a979a0c8d187860f92f8584e293456f58.png" title=" Admin login" width="0"/>
+                <img src="f3c82476ca5faa2480ce73fa0e5fed7a979a0c8d187860f92f8584e293456f58.png" title=" Admin open page" width="0"/>
+                <img src="f3c82476ca5faa2480ce73fa0e5fed7a979a0c8d187860f92f8584e293456f58.png" title=" admin opens the browser at http://localhost:5173/" width="0"/>
+                <img src="d812ad2fa678109d050e8ad003780d9e945865e9fbba857380d105f9f9eb6fe4.png" title=" Admin open page (completed)" width="0"/>
+                <img src="e4539ce610d7f1743970818ee5847c2b22e6c86e4eafeb93d70c829188656b10.png" title=" admin enters 'deivgonz777@gmail.com' into Campo de email" width="0"/>
+                <img src="ac9f38db114a66ed07126a606951c66842f762c5c703dbe84ecbc470adc1ca41.png" title=" admin enters 'Hero77777' into Campo de contrase&ntilde;a" width="0"/>
+                <img src="4f5b28a6423f08dc1325e5b26b87c5bf828bdabd9bbcf3c855e2f1db41158c3b.png" title=" admin clicks on Bot&oacute;n de iniciar sesi&oacute;n" width="0"/>
+                <img src="bac5eb4bd57078016dcd9c4a364a45289521f5a36849ce1cb405009765ce6456.png" title=" Admin login (completed)" width="0"/>
+                <img src="4a73ac76c87a1c1d3621786be296a82e577c2c5fab7f012e8a207676e24dcdd4.png" title=" Dado el usuario es administrador y est&aacute; autenticado en el sistema (completed)" width="0"/>
+                <img src="4a73ac76c87a1c1d3621786be296a82e577c2c5fab7f012e8a207676e24dcdd4.png" title=" Dado que se encuentra en el m&oacute;dulo &quot;Gesti&oacute;n Log&iacute;stica&quot;" width="0"/>
+                <img src="25de82114537c296343ed689745e11cbf619db94cf44a3540d0b9f7609e6b02b.png" title=" Dado que navega hasta la secci&oacute;n &quot;Rutas&quot; mostrando la lista de rutas existentes" width="0"/>
 
-                <img src="95c34e3a974fe0f37a9144d4c1fc643bbebb8d6779154e300ca896d75913755b.png" title=" Entonces el sistema muestra los detalles de la ruta seleccionada correctamente: <span class='success-color'>SUCCESS</span>" width="0"/>
+                <img src="25de82114537c296343ed689745e11cbf619db94cf44a3540d0b9f7609e6b02b.png" title=" admin clicks on Toggle Gestión Logística: <span class='failing-color'>FAILURE</span>" width="0"/>
             </div>
         </div>
 

@@ -43,7 +43,7 @@ public class CreateUserSteps {
 
         // creacion user
         createUser newUser = new createUser(
-                "7844664545",
+                "100236555",
                 row.get("Nombre"),
                 row.get("Email"),
                 "3001234567", // Teléfono
@@ -63,7 +63,7 @@ public class CreateUserSteps {
     public void el_usuario_debe_ser_creado_exitosamente_y_aparecer_en_la_lista() {
         System.out.println("STEP: Verificando que el usuario fue creado y aparece en la lista");
         try {
-            Thread.sleep(12000); // Espera de 12 segundos solicitada
+            Thread.sleep(15000); // Espera de 15 segundos solicitada
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

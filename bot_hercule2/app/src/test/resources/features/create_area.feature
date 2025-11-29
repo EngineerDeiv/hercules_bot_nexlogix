@@ -11,6 +11,6 @@ Característica: Crear nueva área en Nexlogix
     Dado que el administrador ha iniciado sesión y está en el panel principal
     Cuando navega a la sección de creación de áreas
     Y ingresa los datos de la nueva área
-      | NombreArea              | DescripcionArea           |
-      | Redes e Infraestructura | Área creada para pruebass |
+      | NombreArea | DescripcionArea           |
+      | Tesoreria  | Área creada para pruebass |
     Entonces el área debe ser creada exitosamente y aparecer en la lista

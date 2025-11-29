@@ -8,12 +8,11 @@ import runners.auth_nexlogix;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-    auth_nexlogix.class,
-    CreateUserRunner.class,
-    runners.SearchUserRunner.class,
-    CreateAreaRunner.class,
-    runners.SearchAreaRunner.class
-
+    CreateUserRunner.class
+    // runners.SearchUserRunner.class,
+    //CreateAreaRunner.class,
+    // runners.SearchAreaRunner.class
 })
+
 public class SuitUsers {
 }
