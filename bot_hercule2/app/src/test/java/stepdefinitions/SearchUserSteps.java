@@ -3,10 +3,14 @@ package stepdefinitions;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
+import org.hamcrest.Matchers;
+import questions.SuiteUsers.VerifyUser;
 import tasks.Users.RoutersUsers;
 import tasks.Users.SearchForUser;
 import tasks.auth.Login;
+import utils_and_hooks.TestContext;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -30,7 +34,7 @@ public class SearchUserSteps {
 
     @Cuando("busca el usuario creado anteriormente")
     public void busca_el_usuario_creado_anteriormente() {
-        String email = utils_and_hooks.TestContext.createdUserEmail;
+        String email = TestContext.createdUserEmail;
         System.out.println("STEP: Buscando usuario creado con email: " + email);
         theActorInTheSpotlight().attemptsTo(
                 SearchForUser.withTerm(email)
@@ -50,10 +54,17 @@ public class SearchUserSteps {
 
     @Entonces("el sistema debe mostrar al usuario creado en los resultados")
     public void el_sistema_debe_mostrar_al_usuario_creado_en_los_resultados() {
-        String email = utils_and_hooks.TestContext.createdUserEmail;
+        String email = TestContext.createdUserEmail;
         System.out.println("STEP: Verificando que se muestra el usuario: " + email);
+        
+        theActorInTheSpotlight().should(
+                GivenWhenThen.seeThat(
+                        VerifyUser.withEmail(email),
+                        Matchers.is(true)
+                )
+        );
         try {
-            Thread.sleep(5000); // Espera visual
+            Thread.sleep(15000); // Espera visual de 15 segundos
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

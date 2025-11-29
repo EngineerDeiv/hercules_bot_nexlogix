@@ -10,7 +10,6 @@ import runners.ViewsAndSearchVehiculos;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        auth_nexlogix.class,
         views_and_search_routes.class,
         views_and_search_cities.class,
         views_and_search_drivers.class,

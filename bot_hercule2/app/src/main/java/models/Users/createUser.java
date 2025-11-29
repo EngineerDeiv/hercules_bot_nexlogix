@@ -1,5 +1,5 @@
 package models.Users;
-
+import java.util.Random;
 public class createUser {
     private String documentoIdentidad;
     private String nombreCompleto;

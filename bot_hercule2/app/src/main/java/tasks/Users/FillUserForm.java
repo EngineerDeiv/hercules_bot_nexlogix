@@ -14,6 +14,7 @@ public class FillUserForm implements Task {
 
     private final createUser user;
 
+    // Targets PROVISIONALES (Verificar con el HTML real)
     public static final Target DOCUMENT_FIELD = Target.the("Campo Documento de Identidad")
             .located(By.name("documentoIdentidad")); 
             
@@ -33,7 +34,7 @@ public class FillUserForm implements Task {
             .located(By.name("contrasena")); 
             
     public static final Target SAVE_BUTTON = Target.the("Botón Guardar")
-            .located(By.xpath("//button[contains(@class, 'btn-primary') and contains(text(), 'Guardar')]"));
+            .located(By.xpath("//button[normalize-space()='Guardar']"));
 
     public FillUserForm(createUser user) {
         this.user = user;
@@ -50,10 +51,10 @@ public class FillUserForm implements Task {
                 Enter.theValue(user.getContrasena()).into(PASSWORD_FIELD),
 
                 // listas desplegables
-                ListUtil.withValues(user.getRol(), user.getPuesto(), user.getEstado())
+                ListUtil.withValues(user.getRol(), user.getPuesto(), user.getEstado()),
 
                 // Guardar
-               // Click.on(SAVE_BUTTON)
+                Click.on(SAVE_BUTTON)
         );
     }
 

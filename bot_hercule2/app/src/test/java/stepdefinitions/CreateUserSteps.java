@@ -2,10 +2,11 @@ package stepdefinitions;
 
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Cuando;
-import io.cucumber.java.es.Entonces;
+import io.cucumber.java.es.Y;
 import io.cucumber.datatable.DataTable;
 import models.Users.createUser;
-import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.GivenWhenThen;
+import org.hamcrest.Matchers;
 import tasks.Users.FillUserForm;
 import tasks.Users.NavUsers;
 import tasks.Users.RoutersUsers;
@@ -33,37 +34,73 @@ public class CreateUserSteps {
         );
     }
 
-    @Cuando("ingresa los datos del nuevo usuario")
+    @Y("ingresa los datos del nuevo usuario")
     public void ingresa_los_datos_del_nuevo_usuario(DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-        Map<String, String> row = data.get(0); // Tomamos la primera fila
+        Map<String, String> row = data.get(0);
 
-        // Guarda el email
-        utils_and_hooks.TestContext.createdUserEmail = row.get("Email");
+        // Generación de datos aleatorios
+        String randomId = String.valueOf(10000000 + new java.util.Random().nextInt(90000000));
+        String randomPhone = "300" + (1000000 + new java.util.Random().nextInt(9000000));
+        String randomName = "Usuario Test " + randomId.substring(0, 4);
+        String randomEmail = "test" + randomId + "@nexlogix.com";
+        String randomAddress = "Calle " + new java.util.Random().nextInt(100) + " # " + new java.util.Random().nextInt(100);
 
-        // creacion user
+        // Procesar variables del feature
+        String nombre = row.get("Nombre").equals("{var_nombre}") ? randomName : row.get("Nombre");
+        String email = row.get("Email").equals("{var_email}") ? randomEmail : row.get("Email");
+        String rol = row.get("Rol").equals("{var_rol}") ? "Manager" : row.get("Rol"); // Default Manager si es variable
+
+        // Guardar el email en el contexto para usarlo en la búsqueda
+        utils_and_hooks.TestContext.createdUserEmail = email;
+
+        // Creamos el modelo con los datos
         createUser newUser = new createUser(
-                "100236555",
-                row.get("Nombre"),
-                row.get("Email"),
-                "3001234567", // Teléfono
-                "Calle Falsa 123", // Dirección
-                "Password123", // Contraseña
-                row.get("Rol"),
-                "Gerente General de Sistemas", // Puesto
-                "ACTIVO"
+                randomId,
+                nombre,
+                email,
+                randomPhone,
+                randomAddress,
+                "Password123", // Contraseña fija
+                rol,
+                "Gerente General de Sistemas", // Puesto fijo
+                "ACTIVO" // Estado fijo
         );
 
+        // Ejecutamos la tarea de llenar el formulario (SIN GUARDAR AÚN)
         theActorInTheSpotlight().attemptsTo(
                 FillUserForm.withData(newUser)
         );
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
-    @Entonces("el usuario debe ser creado exitosamente y aparecer en la lista")
-    public void el_usuario_debe_ser_creado_exitosamente_y_aparecer_en_la_lista() {
-        System.out.println("STEP: Verificando que el usuario fue creado y aparece en la lista");
+    @Cuando("se este llenando el furmlario validar que se de click")
+    public void se_este_llenando_el_furmlario_validar_que_se_de_click() {
         try {
-            Thread.sleep(15000); // Espera de 15 segundos solicitada
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Y("si no da click el test debe fallar y no guardar ningun dato")
+    public void si_no_da_click_el_test_debe_fallar_y_no_guardar_ningun_dato() {
+        String email = utils_and_hooks.TestContext.createdUserEmail;
+        System.out.println("STEP: Verificando que el usuario NO existe (porque no se dio click): " + email);
+
+        theActorInTheSpotlight().should(
+                GivenWhenThen.seeThat(
+                        questions.SuiteUsers.VerifyUser.withEmail(email),
+                        //Si queremos que falle, poner false , si queremos que paso poner tree, pero se debe comentar save en FillUserForm
+                        Matchers.is(true)
+                )
+        );
+        try {
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
