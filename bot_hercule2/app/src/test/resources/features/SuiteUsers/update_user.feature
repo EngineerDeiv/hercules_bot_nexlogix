@@ -2,13 +2,17 @@
 # autor: Brandon Gonzalez
 
 @UpdateUser
-Característica: Editar usuario existente
+Característica: Editar el usuario que se creo que los anteriores steps
   Como administrador del sistema
-  Quiero editar la información de un usuario
-  Para mantener los datos actualizados
+  Editar la información de un usuario existente
+  Para mantener los datos actualizados y correctos
 
   Escenario: Editar información de un usuario
-    Dado que el administrador ha buscado al usuario "xxxx"
-    Cuando selecciona la opción de editar usuario
-    Y actualiza la información del usuario
-    Entonces los datos del usuario "xxxx" deben quedar actualizados en el sistema
+    Dado que busco el usuario creado anteriormente y abro la opcion de editar
+    Entonces editar toda la informacion del usuario
+      | Documento de Identidad | Nombre Completo | Email       | Teléfono       | Dirección       | Rol       | Puesto       | Estado       |
+      | {var_documento}        | {var_nombre}    | {var_email} | {var_telefono} | {var_direccion} | {var_rol} | {var_puesto} | {var_estado} |
+    Cuando se este llenando el furmlario validar que se de click y se guuarde
+    Entonces Buscar el usuario editado
+    Y si no da click al editar el test debe fallar y no guardar ningun dato
+

@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/update_user.feature",
+        features = "src/test/resources/features/SuiteUsers/update_user.feature",
         glue = {"stepdefinitions"},
         plugin = {"pretty", "html:target/cucumber-reports/update_user.html"}
 )
