@@ -9,7 +9,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-import userinterface.RoutersGeneral;
+import userinterface.Rutas.RoutersGeneral;
 import userinterface.DriversPage;
 
 public class ViewsAndSearchDriversSteps {

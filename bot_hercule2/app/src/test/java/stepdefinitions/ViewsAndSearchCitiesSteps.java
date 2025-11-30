@@ -5,18 +5,12 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Open;
-import utils_and_hooks.DefaultURL;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.SendKeys;
-import org.openqa.selenium.Keys;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
-import tasks.OpenPage;
-import userinterface.LoginPage;
-import userinterface.RoutersGeneral;
+
+import userinterface.Rutas.RoutersGeneral;
 import userinterface.CitiesPage;
 
 /**

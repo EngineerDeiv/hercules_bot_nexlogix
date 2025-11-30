@@ -9,17 +9,13 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Clear;
 import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.targets.Target;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-import org.openqa.selenium.Keys;
+
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 import tasks.auth.Login;
-import userinterface.RoutersGeneral;
+import userinterface.Rutas.RoutersGeneral;
 import userinterface.RoutesPage;
-
-import java.util.Arrays;
-import java.util.List;
 
 public class view_and_search_routes {
 

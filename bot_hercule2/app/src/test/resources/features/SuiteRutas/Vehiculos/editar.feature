@@ -8,10 +8,10 @@ Característica: Editar el vehículo que se creo en los anteriores steps
   Para mantener los datos actualizados y correctos
 
   Escenario: Editar información de un vehículo
-    Dado que busco el vehículo creado anteriormente y abro la opcion de editar
+    Dado que el administrador ha iniciado sesión y está en el panel principal de Vehículos
     Entonces editar toda la informacion del vehículo
-      | Placa       | Marca       | Modelo       | Tipo       | Estado       |
-      | {var_placa} | {var_marca} | {var_modelo} | {var_tipo} | {var_estado} |
+      | Placa       | Marca       | Tipo       | Capacidad       | Estado       | Último mantenimiento |
+      | {var_placa} | {var_marca} | {var_tipo} | {var_capacidad} | {var_estado} | {var_ultimo_mantenimiento} |
     Cuando se este llenando el formulario del vehículo validar que se de click y se guarde
     Entonces Buscar el vehículo editado
-    Y si no da click al editar el test debe fallar y no guardar ningun dato
+    Y si no da click al editar el test debe fallar y no guardar ningun dato en Vehículos

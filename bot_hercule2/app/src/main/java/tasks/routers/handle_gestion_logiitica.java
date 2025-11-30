@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import tasks.OpenPage;
-import userinterface.RoutersGeneral;
+import userinterface.Rutas.RoutersGeneral;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 

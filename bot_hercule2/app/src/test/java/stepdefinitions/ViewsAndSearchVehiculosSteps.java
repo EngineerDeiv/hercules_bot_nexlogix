@@ -6,7 +6,6 @@ import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.actions.Clear;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
@@ -15,8 +14,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 import tasks.auth.Login;
 import net.serenitybdd.screenplay.actions.Open;
 import utils_and_hooks.DefaultURL;
-import userinterface.RoutersGeneral;
-import userinterface.VehiclesPage;
+import userinterface.Rutas.Vehiculos.VehiclesNavPage;
 import java.util.Arrays;
 import java.util.List;
 
@@ -39,7 +37,7 @@ public class ViewsAndSearchVehiculosSteps {
 		);
 		// Esperar que la tabla de Vehículos esté visible
 		actor.attemptsTo(
-			WaitUntil.the(VehiclesPage.TABLE_RESULTS, isVisible()).forNoMoreThan(15).seconds()
+			WaitUntil.the(VehiclesNavPage.TABLE_RESULTS, isVisible()).forNoMoreThan(15).seconds()
 		);
 		System.out.println("STEP: Navegado directamente a la sección: " + section);
 	} catch (Exception e) {
@@ -49,7 +47,7 @@ public class ViewsAndSearchVehiculosSteps {
 		);
 		// Asegurar que la tabla se cargue
 		actor.attemptsTo(
-				WaitUntil.the(VehiclesPage.TABLE_RESULTS, isVisible()).forNoMoreThan(10).seconds()
+				WaitUntil.the(VehiclesNavPage.TABLE_RESULTS, isVisible()).forNoMoreThan(10).seconds()
 		);
 	}
 		System.out.println("STEP: Navegado a la sección: " + section);
@@ -59,11 +57,11 @@ public class ViewsAndSearchVehiculosSteps {
 	public void busca_un_vehiculo_especifico_por_su_placa(String placa) {
 		Actor actor = OnStage.theActorCalled("admin");
 		actor.attemptsTo(
-				WaitUntil.the(VehiclesPage.INPUT_SEARCH, isVisible()).forNoMoreThan(10).seconds(),
-				Enter.theValue(placa).into(VehiclesPage.INPUT_SEARCH),
-				WaitUntil.the(VehiclesPage.BTN_BUSCAR_ID, isVisible()).forNoMoreThan(10).seconds(),
-				Click.on(VehiclesPage.BTN_BUSCAR_ID),
-				WaitUntil.the(VehiclesPage.TABLE_RESULTS, isVisible()).forNoMoreThan(10).seconds()
+				WaitUntil.the(VehiclesNavPage.INPUT_SEARCH, isVisible()).forNoMoreThan(10).seconds(),
+				Enter.theValue(placa).into(VehiclesNavPage.INPUT_SEARCH),
+				WaitUntil.the(VehiclesNavPage.BTN_BUSCAR_ID, isVisible()).forNoMoreThan(10).seconds(),
+				Click.on(VehiclesNavPage.BTN_BUSCAR_ID),
+				WaitUntil.the(VehiclesNavPage.TABLE_RESULTS, isVisible()).forNoMoreThan(10).seconds()
 		);
 		// Mantener un tiempo para inspección manual
 		try {
@@ -83,18 +81,18 @@ public class ViewsAndSearchVehiculosSteps {
 
 		for (String placa : placas) {
 			actor.attemptsTo(
-					WaitUntil.the(VehiclesPage.INPUT_SEARCH, isVisible()).forNoMoreThan(10).seconds(),
+					WaitUntil.the(VehiclesNavPage.INPUT_SEARCH, isVisible()).forNoMoreThan(10).seconds(),
 					// Limpiar lo que esté en el input antes de escribir la siguiente placa
-					Clear.field(VehiclesPage.INPUT_SEARCH),
-					Enter.theValue(placa).into(VehiclesPage.INPUT_SEARCH),
-					WaitUntil.the(VehiclesPage.BTN_BUSCAR_ID, isVisible()).forNoMoreThan(10).seconds(),
-					Click.on(VehiclesPage.BTN_BUSCAR_ID),
-					WaitUntil.the(VehiclesPage.TABLE_RESULTS, isVisible()).forNoMoreThan(10).seconds()
+					Clear.field(VehiclesNavPage.INPUT_SEARCH),
+					Enter.theValue(placa).into(VehiclesNavPage.INPUT_SEARCH),
+					WaitUntil.the(VehiclesNavPage.BTN_BUSCAR_ID, isVisible()).forNoMoreThan(10).seconds(),
+					Click.on(VehiclesNavPage.BTN_BUSCAR_ID),
+					WaitUntil.the(VehiclesNavPage.TABLE_RESULTS, isVisible()).forNoMoreThan(10).seconds()
 			);
 
 			// Verificar que la tabla contiene la placa buscada
 			actor.attemptsTo(
-					Ensure.that(VehiclesPage.TABLE_RESULTS).text().contains(placa)
+					Ensure.that(VehiclesNavPage.TABLE_RESULTS).text().contains(placa)
 			);
 
 			System.out.println("STEP: Buscado vehículo con placa: " + placa);
