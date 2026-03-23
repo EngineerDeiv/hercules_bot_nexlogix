@@ -10,7 +10,7 @@ plugins {
     id 'application'
     id 'java'
     id 'idea'
-    id 'net.serenity-bdd.serenity-gradle-plugin' version '4.2.8'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '4.2.31'
 }
 
 repositories {

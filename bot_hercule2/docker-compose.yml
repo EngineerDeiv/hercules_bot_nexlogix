@@ -1,0 +1,12 @@
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bot-hercules-nx
+    restart: "no"
+    volumes:
+      - ./reports:/app/build/reports/serenity
+      - ./logs:/app/logs
+    environment:
+      TZ: America/Bogota
